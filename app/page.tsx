@@ -105,6 +105,21 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="w-full h-screen p-16 flex flex-col justify-center">
+          <div className="flex flex-col gap-2">
+            <h1 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
+              Contact Me
+            </h1>
+            <p>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum nostra
+              mus phasellus potenti hac. Class blandit gravida semper; pharetra
+              amet nibh sem dis? Donec consequat sagittis augue curabitur
+              dapibus ornare dapibus facilisis. Venenatis maecenas eros
+              suspendisse nec ultrices platea. Bibendum massa nibh ridiculus
+              lorem mus. Egestas
+            </p>
+          </div>
+        </div>
       </main>
     </div>
   );
