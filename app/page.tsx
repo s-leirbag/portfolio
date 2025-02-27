@@ -5,18 +5,18 @@ import ScrollButton from "./ui/ScrollButton";
 export default function Home() {
   return (
     <div className="font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px]">
-      <ScrollButton />
       <div
         style={{
           background: "radial-gradient(ellipse, black 0%, transparent 70%)",
         }}
       >
         <div
-        style={{
-          background: "radial-gradient(ellipse, black 0%, transparent 80%)",
-        }}
+          style={{
+            background: "radial-gradient(ellipse, black 0%, transparent 80%)",
+          }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-center h-screen">
+          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-between h-screen">
+            <div />
             <div className="w-full flex flex-col md:flex-row gap-12">
               <Image
                 className="rounded-2xl lg:w-64 lg:h-64 w-48 h-48 md:order-1"
@@ -27,16 +27,10 @@ export default function Home() {
                 priority
               />
               <div className="flex-1 flex flex-col gap-2">
-                <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent absolute">
+                <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
                   Gabriel Shiu
                 </h1>
-                <h1
-                  className="text-5xl sm:text-8xl py-0.5 rounded font-semibold"
-                >
-                  Gabriel Shiu
-                </h1>
-                <p
-                >
+                <p>
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum
                   nostra mus phasellus potenti hac. Class blandit gravida
                   semper; pharetra amet nibh sem dis? Donec consequat sagittis
@@ -46,6 +40,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
+            <ScrollButton />
           </div>
         </div>
         <div
