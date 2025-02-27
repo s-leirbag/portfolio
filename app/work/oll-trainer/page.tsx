@@ -106,17 +106,15 @@ export default function Page() {
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
           </div>
           <div className="mt-8 w-full px-16 grid grid-cols-2 gap-8">
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
+            <Link
+              href={"/work/oll-trainer"}
+              className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            >
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
+              <p className="font-medium hover:underline">view project {"->"}</p>
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -124,18 +122,16 @@ export default function Page() {
                 height={2112}
                 priority
               />
-            </div>
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
+            </Link>
+            <Link
+              href={"/work/oll-trainer"}
+              className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            >
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
+              <p className="font-medium hover:underline">view project {"->"}</p>
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -143,26 +139,7 @@ export default function Page() {
                 height={2112}
                 priority
               />
-            </div>
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
-              <h3 className="text-xl sm:text-3xl rounded font-semibold">
-                Rubiks Cube Trainer
-              </h3>
-              <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
-              <Image
-                src="/train-mui.png"
-                alt="project thumbnail"
-                width={2852}
-                height={2112}
-                priority
-              />
-            </div>
+            </Link>
           </div>
         </div>
         <div className="w-full h-[calc(90vh)] p-16 flex flex-col justify-center">

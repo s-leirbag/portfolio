@@ -85,17 +85,15 @@ export default function Home() {
             </p>
           </div>
           <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
+            <Link
+              href={"/work/oll-trainer"}
+              className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            >
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
+              <p className="font-medium hover:underline">view project {"->"}</p>
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -103,18 +101,16 @@ export default function Home() {
                 height={2112}
                 priority
               />
-            </div>
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
+            </Link>
+            <Link
+              href={"/work/oll-trainer"}
+              className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            >
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
+              <p className="font-medium hover:underline">view project {"->"}</p>
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -122,18 +118,16 @@ export default function Home() {
                 height={2112}
                 priority
               />
-            </div>
-            <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
+            </Link>
+            <Link
+              href={"/work/oll-trainer"}
+              className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            >
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-              <Link
-                href={"/work/oll-trainer"}
-                className="font-medium hover:underline"
-              >
-                view project {"->"}
-              </Link>
+              <p className="font-medium hover:underline">view project {"->"}</p>
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -141,7 +135,7 @@ export default function Home() {
                 height={2112}
                 priority
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div
