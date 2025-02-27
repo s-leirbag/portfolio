@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ScrollButton from "./ui/ScrollButton";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
               priority
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold">
+              <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
                 Gabriel Shiu
               </h1>
               <p>
@@ -30,14 +31,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 w-fit rounded-lg bg-foreground text-background hover:bg-[#383838] dark:hover:bg-[#ccc] py-4 px-4 sm:px-5"
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          My Work
-        </a>
+        <ScrollButton />
         <div className="w-full py-16">
           <div className="w-full md:w-[640] lg:w-[768] px-16 m-auto">
             <h2 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">

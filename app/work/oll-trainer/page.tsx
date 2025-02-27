@@ -6,7 +6,7 @@ export default function Page() {
     <div className="justify-items-center font-[family-name:var(--font-geist-sans)]">
       <main className="w-full sm:w-[640] md:w-[768] lg:w-[1024]">
         <div className="w-full pt-[calc(30vh)] p-16 gap-8 flex flex-col">
-          <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold">
+          <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
             {"Rubik's"} Cube Trainer
           </h1>
           <p>
