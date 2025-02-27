@@ -12,13 +12,9 @@ export default function Home() {
         }}
       >
         <div
-        // style={{
-        //   background: "radial-gradient(ellipse, #38bdf8 0%, transparent 70%), radial-gradient(ellipse, black 0%, transparent 80%)",
-        //   backgroundPosition: "40vw -5vh, 0 0",
-        //   backgroundRepeat: "no-repeat",
-        //   backgroundClip: "content-box",
-        //   backgroundSize: "80%, 100%"
-        // }}
+        style={{
+          background: "radial-gradient(ellipse, black 0%, transparent 80%)",
+        }}
         >
           <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-center h-screen">
             <div className="w-full flex flex-col md:flex-row gap-12">
@@ -36,18 +32,10 @@ export default function Home() {
                 </h1>
                 <h1
                   className="text-5xl sm:text-8xl py-0.5 rounded font-semibold"
-                  style={{
-                    textShadow:
-                      "0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black",
-                  }}
                 >
                   Gabriel Shiu
                 </h1>
                 <p
-                  style={{
-                    background:
-                      "radial-gradient(ellipse, black 0%, transparent 100%)",
-                  }}
                 >
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum
                   nostra mus phasellus potenti hac. Class blandit gravida
