@@ -41,7 +41,7 @@ export default function Page() {
                 <strong>Link</strong>
                 <Link
                   href={"https://oll-trainer-s-leirbag.vercel.app/"}
-                  className="block w-fit rounded-lg bg-sky-500 text-background hover:bg-[#0ea5e9e6] py-4 px-4 sm:px-5"
+                  className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] py-4 px-4 sm:px-5"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
