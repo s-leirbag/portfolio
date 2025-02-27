@@ -4,42 +4,69 @@ import ScrollButton from "./ui/ScrollButton";
 
 export default function Home() {
   return (
-    <div className="justify-items-center font-[family-name:var(--font-geist-sans)]">
-      <main className="w-full sm:w-[640] md:w-[768] lg:w-[1024]">
-        <div className="h-screen p-16 flex flex-col justify-center">
-          <div className="w-full flex flex-col md:flex-row gap-12">
-            <Image
-              className="rounded-2xl lg:w-64 lg:h-64 w-48 h-48 md:order-1"
-              src="/professional_photo.jpeg"
-              alt="portrait photo"
-              width={2344}
-              height={2344}
-              priority
-            />
-            <div className="flex-1 flex flex-col gap-2">
-              <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
-                Gabriel Shiu
-              </h1>
-              <p>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum
-                nostra mus phasellus potenti hac. Class blandit gravida semper;
-                pharetra amet nibh sem dis? Donec consequat sagittis augue
-                curabitur dapibus ornare dapibus facilisis. Venenatis maecenas
-                eros suspendisse nec ultrices platea. Bibendum massa nibh
-                ridiculus lorem mus. Egestas
-              </p>
+    <div className="font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px]">
+      <ScrollButton />
+      <div
+        style={{
+          background: "radial-gradient(ellipse, black 0%, transparent 70%)",
+        }}
+      >
+        <div
+          style={{
+            background: "radial-gradient(ellipse, black 0%, transparent 80%)",
+          }}
+        >
+          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-center h-screen">
+            <div className="w-full flex flex-col md:flex-row gap-12">
+              <Image
+                className="rounded-2xl lg:w-64 lg:h-64 w-48 h-48 md:order-1"
+                src="/professional_photo.jpeg"
+                alt="portrait photo"
+                width={2344}
+                height={2344}
+                priority
+              />
+              <div className="flex-1 flex flex-col gap-2">
+                <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
+                  Gabriel Shiu
+                </h1>
+                <p>
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum
+                  nostra mus phasellus potenti hac. Class blandit gravida
+                  semper; pharetra amet nibh sem dis? Donec consequat sagittis
+                  augue curabitur dapibus ornare dapibus facilisis. Venenatis
+                  maecenas eros suspendisse nec ultrices platea. Bibendum massa
+                  nibh ridiculus lorem mus. Egestas
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <ScrollButton />
-        <div className="w-full py-16">
+        <div
+          style={{
+            background: "radial-gradient(ellipse, black 0%, transparent 80%)",
+          }}
+        >
           <div className="w-full md:w-[640] lg:w-[768] px-16 m-auto">
-            <h2 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
+            <h2
+              className="text-3xl sm:text-6xl py-0.5 rounded font-semibold"
+              style={{
+                textShadow:
+                  "0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black",
+              }}
+            >
               Work
             </h2>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+            <p
+              style={{
+                textShadow:
+                  "0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black",
+              }}
+            >
+              Lorem ipsum odor amet, consectetuer adipiscing elit.
+            </p>
           </div>
-          <div className="mt-8 w-full px-16 grid grid-cols-2 gap-8">
+          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
             <div className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2">
               <h3 className="text-xl sm:text-3xl rounded font-semibold">
                 Rubiks Cube Trainer
@@ -99,8 +126,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen p-16 flex flex-col justify-center">
-          <div className="flex flex-col gap-2">
+        <div
+          style={{
+            background: "radial-gradient(ellipse, black 0%, transparent 80%)",
+          }}
+        >
+          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-center h-screen gap-2">
             <h1 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
               Contact Me
             </h1>
@@ -114,7 +145,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
