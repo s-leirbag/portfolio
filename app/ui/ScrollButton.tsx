@@ -42,9 +42,9 @@ export default function ScrollButton() {
       onClick={scrollToNextSection}
       className={cn(
         'fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50',
-        'bg-primary text-primary-foreground rounded-full p-3',
+        'bg-sky-500 text-primary-foreground rounded-full p-3',
         'shadow-lg transition-all duration-300 ease-in-out',
-        'hover:bg-primary/90 hover:shadow-xl hover:-translate-y-1',
+        'hover:bg-sky-500/90 hover:shadow-xl hover:-translate-y-1',
         'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
       )}
