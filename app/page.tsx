@@ -15,7 +15,7 @@ export default function Home() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-between h-screen">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto flex flex-col justify-between h-screen">
             <h1 className="text-xl py-0.5 rounded font-semibold text-center">
               work in progress...
               <br />
@@ -57,7 +57,7 @@ export default function Home() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full md:w-[640] lg:w-[768] px-16 m-auto">
+          <div className="w-full md:w-[640px] lg:w-[768px] px-16 m-auto">
             <h2
               className="text-3xl sm:text-6xl py-0.5 rounded font-semibold"
               style={{
@@ -76,7 +76,7 @@ export default function Home() {
               Lorem ipsum odor amet, consectetuer adipiscing elit.
             </p>
           </div>
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
             <Link
               href={"/work/oll-trainer"}
               className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
@@ -135,7 +135,7 @@ export default function Home() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-center h-screen gap-2">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto flex flex-col justify-center h-screen gap-2">
             <h1 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
               Contact Me
             </h1>

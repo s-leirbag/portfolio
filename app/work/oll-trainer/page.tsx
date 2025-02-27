@@ -14,7 +14,7 @@ export default function Page() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
             <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
               {"Rubik's"} Cube Trainer
             </h1>
@@ -56,7 +56,7 @@ export default function Page() {
           //   background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           // }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto gap-32 mb-32 flex flex-col">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto gap-32 mb-32 flex flex-col">
               <Image
                 src="/train-mui.png"
                 alt="project thumbnail"
@@ -121,7 +121,7 @@ export default function Page() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full md:w-[640] lg:w-[768] px-16 m-auto">
+          <div className="w-full md:w-[640px] lg:w-[768px] px-16 m-auto">
             <h2
               className="text-3xl sm:text-6xl py-0.5 rounded font-semibold"
               style={{
@@ -140,7 +140,7 @@ export default function Page() {
               Lorem ipsum odor amet, consectetuer adipiscing elit.
             </p>
           </div>
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
             <Link
               href={"/work/oll-trainer"}
               className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
@@ -182,7 +182,7 @@ export default function Page() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col h-[calc(90vh)]">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col h-[calc(90vh)]">
             <h2 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
               Contact Me
             </h2>
