@@ -16,7 +16,16 @@ export default function Home() {
           }}
         >
           <div className="w-full sm:w-[640] md:w-[768] lg:w-[1024] p-16 mx-auto flex flex-col justify-between h-screen">
-            <div />
+            <h1 className="text-xl py-0.5 rounded font-semibold text-center">
+              work in progress...
+              <br />
+              <Link
+                href={"https://github.com/s-leirbag/portfolio"}
+                className="hover:underline text-sky-500"
+              >
+                https://github.com/s-leirbag/portfolio
+              </Link>
+            </h1>
             <div className="w-full flex flex-col md:flex-row gap-12">
               <Image
                 className="rounded-2xl lg:w-64 lg:h-64 w-48 h-48 md:order-1"
