@@ -111,7 +111,7 @@ export default function Page() {
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid sm:grid-cols-2 gap-8">
           <Link
             href={"/work/oll-trainer"}
-            className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
             <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
@@ -128,7 +128,7 @@ export default function Page() {
           </Link>
           <Link
             href={"/work/oll-trainer"}
-            className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
             <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
