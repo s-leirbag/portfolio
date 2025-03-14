@@ -27,7 +27,7 @@ export default function Home() {
               priority
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h1 className="text-5xl md:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-200 bg-clip-text text-transparent">
                 Gabriel Shiu
               </h1>
               <p>
