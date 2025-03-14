@@ -52,7 +52,7 @@ export default function ScrollButton() {
       )}
       aria-label="Scroll to next section"
     >
-      <ChevronDown className="h-6 w-6" />
+      <ChevronDown className="h-6 w-6 text-neutral-50" />
     </button>
   );
 }

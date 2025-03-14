@@ -19,3 +19,45 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .gradient-bg-70 {
+    background: radial-gradient(ellipse, white 0%, transparent 70%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .gradient-bg-70 {
+      background: radial-gradient(ellipse, black 0%, transparent 70%);
+    }
+  }
+
+  .gradient-bg-80 {
+    background: radial-gradient(ellipse, white 0%, transparent 80%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .gradient-bg-80 {
+      background: radial-gradient(ellipse, black 0%, transparent 80%);
+    }
+  }
+
+  .text-shadow-50px {
+    text-shadow: "0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white";
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .text-shadow-50px {
+      text-shadow: "0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black";
+    }
+  }
+
+  .text-shadow-20px {
+    text-shadow: "0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white";
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .text-shadow-20px {
+      text-shadow: "0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black";
+    }
+  }
+}
