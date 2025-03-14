@@ -43,7 +43,7 @@ export default function ScrollButton() {
       className={cn(
         "self-center",
         "bg-sky-500 text-primary-foreground rounded-full p-3",
-        "shadow-lg transition-all duration-300 ease-in-out",
+        "shadow-lg transition-all duration-300",
         "hover:bg-sky-500/90 hover:shadow-xl hover:-translate-y-1",
         "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
         isVisible

@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-50 md:text-lg`}
       >
         <div
           className="absolute w-28 md:w-32 p-8"
