@@ -15,8 +15,8 @@ export default function Home() {
             background: "radial-gradient(ellipse, black 0%, transparent 80%)",
           }}
         >
-          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto flex flex-col justify-between min-h-screen">
-            <h1 className="text-xl py-0.5 rounded font-semibold text-center">
+          <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto flex flex-col justify-between gap-8 min-h-screen">
+            <h1 className="sm:text-xl py-0.5 font-semibold text-center">
               work in progress...
               <br />
               <Link
@@ -26,9 +26,9 @@ export default function Home() {
                 https://github.com/s-leirbag/portfolio
               </Link>
             </h1>
-            <div className="w-full flex flex-col md:flex-row gap-12">
+            <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
               <Image
-                className="rounded-2xl lg:w-64 lg:h-64 w-48 h-48 md:order-1"
+                className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
                 src="/professional_photo.jpeg"
                 alt="portrait photo"
                 width={2344}
@@ -36,7 +36,7 @@ export default function Home() {
                 priority
               />
               <div className="flex-1 flex flex-col gap-2">
-                <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
+                <h1 className="text-5xl md:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
                   Gabriel Shiu
                 </h1>
                 <p>
@@ -106,7 +106,7 @@ export default function Home() {
         >
           <div className="w-full md:w-[640px] lg:w-[768px] px-16 m-auto">
             <h2
-              className="text-3xl sm:text-6xl py-0.5 rounded font-semibold"
+              className="text-3xl sm:text-6xl py-0.5 font-semibold"
               style={{
                 textShadow:
                   "0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black",
@@ -128,7 +128,7 @@ export default function Home() {
               href={"/work/oll-trainer"}
               className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
             >
-              <h3 className="text-xl sm:text-3xl rounded font-semibold">
+              <h3 className="text-xl sm:text-3xl font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -145,7 +145,7 @@ export default function Home() {
               href={"/work/oll-trainer"}
               className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
             >
-              <h3 className="text-xl sm:text-3xl rounded font-semibold">
+              <h3 className="text-xl sm:text-3xl font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -162,7 +162,7 @@ export default function Home() {
               href={"/work/oll-trainer"}
               className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
             >
-              <h3 className="text-xl sm:text-3xl rounded font-semibold">
+              <h3 className="text-xl sm:text-3xl font-semibold">
                 Rubiks Cube Trainer
               </h3>
               <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -183,7 +183,7 @@ export default function Home() {
           }}
         >
           <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
-            <h1 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
+            <h1 className="text-3xl sm:text-6xl py-0.5 font-semibold">
               Contact Me
             </h1>
             <p>

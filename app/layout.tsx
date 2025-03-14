@@ -51,7 +51,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-neutral-50`}
       >
         <div
-          className="absolute w-32 p-8"
+          className="absolute w-28 md:w-32 p-8"
           style={{
             background: "radial-gradient(ellipse, black 0%, transparent 70%)",
           }}
