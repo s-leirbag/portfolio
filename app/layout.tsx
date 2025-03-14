@@ -58,6 +58,15 @@ export default function RootLayout({
               width={512}
               height={512}
               priority
+              className="hidden dark:inline-block"
+            />
+            <Image
+              src="/logo-1-dot-fat-light.png"
+              alt="logo"
+              width={512}
+              height={512}
+              priority
+              className="dark:hidden"
             />
           </Link>
         </div>
