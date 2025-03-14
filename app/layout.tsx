@@ -16,6 +16,26 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Gabriel Shiu",
   description: "Personal portfolio",
+  icons: {
+    icon: [
+      {
+        url: '/logo-1-dot-fat-light.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/logo-1-dot-fat-dark.png',
+      },
+    ],
+    apple: [
+      {
+        url: '/logo-1-dot-fat-180-light.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/logo-1-dot-fat-180-light.png',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
