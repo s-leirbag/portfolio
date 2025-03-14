@@ -91,20 +91,20 @@ export default function Home() {
         </div>
       </div>
       <div className="gradient-bg-80">
-        <div className="w-full md:w-[640px] lg:w-[768px] px-16 m-auto">
-          <h2 className="text-3xl sm:text-6xl py-0.5 font-semibold text-shadow-50px">
+        <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
+          <h2 className="text-3xl md:text-6xl py-0.5 font-semibold text-shadow-50px">
             Work
           </h2>
           <p className="text-shadow-20px">
             Lorem ipsum odor amet, consectetuer adipiscing elit.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid sm:grid-cols-2 gap-8">
           <Link
             href={"/work/oll-trainer"}
             className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
-            <h3 className="text-xl sm:text-3xl font-semibold">
+            <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -121,7 +121,7 @@ export default function Home() {
             href={"/work/oll-trainer"}
             className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
-            <h3 className="text-xl sm:text-3xl font-semibold">
+            <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -138,7 +138,7 @@ export default function Home() {
             href={"/work/oll-trainer"}
             className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
-            <h3 className="text-xl sm:text-3xl font-semibold">
+            <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -154,8 +154,8 @@ export default function Home() {
         </div>
       </div>
       <div className="gradient-bg-80">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
-          <h1 className="text-3xl sm:text-6xl py-0.5 font-semibold">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
+          <h1 className="text-3xl md:text-6xl py-0.5 font-semibold">
             Contact Me
           </h1>
           <p>
