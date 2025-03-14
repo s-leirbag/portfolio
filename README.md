@@ -1,6 +1,6 @@
 # Portfolio Site
 
-## https://s-leirbag.vercel.app/
+## https://www.gabrielshiu.com/
 Work In Progress 🚧
 
-[![Screenshot](public/ss.png)](https://s-leirbag.vercel.app/)
+[![Screenshot](public/ss.png)](https://www.gabrielshiu.com/)
