@@ -5,8 +5,8 @@ export default function Page() {
   return (
     <div className="gradient-bg-70">
       <div className="gradient-bg-80">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
-          <h1 className="text-5xl sm:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
+          <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-100 bg-clip-text text-transparent">
             {"Rubik's"} Cube Trainer
           </h1>
           <p>
@@ -41,7 +41,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto gap-32 mb-32 flex flex-col">
+      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
         <Image
           src="/train-mui.png"
           alt="project thumbnail"
@@ -50,7 +50,7 @@ export default function Page() {
           priority
         />
         <div>
-          <h3 className="text-2xl sm:text-5xl mb-2 rounded font-semibold">
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Project Purpose
           </h3>
           <p>
@@ -60,7 +60,7 @@ export default function Page() {
           </p>
         </div>
         <div className="text-center lg:px-32">
-          <h3 className="text-2xl sm:text-5xl mb-2 rounded font-semibold">
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Thought Process
           </h3>
           <p>
@@ -78,7 +78,7 @@ export default function Page() {
             priority
           />
           <div>
-            <h3 className="text-2xl sm:text-5xl mb-2 rounded font-semibold">
+            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
               Problem
             </h3>
             <p>
@@ -89,7 +89,7 @@ export default function Page() {
           </div>
         </div>
         <div className="lg:pr-64">
-          <h3 className="text-2xl sm:text-5xl mb-2 rounded font-semibold">
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Learnings
           </h3>
           <p>
@@ -100,20 +100,20 @@ export default function Page() {
         </div>
       </div>
       <div className="gradient-bg-80">
-        <div className="w-full md:w-[640px] lg:w-[768px] px-16 m-auto">
-          <h2 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold text-shadow-50px">
+        <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
+          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
           <p className="text-shadow-20px">
             Lorem ipsum odor amet, consectetuer adipiscing elit.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 p-16 mx-auto grid md:grid-cols-2 gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid sm:grid-cols-2 gap-8">
           <Link
             href={"/work/oll-trainer"}
-            className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
-            <h3 className="text-xl sm:text-3xl rounded font-semibold">
+            <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -128,9 +128,9 @@ export default function Page() {
           </Link>
           <Link
             href={"/work/oll-trainer"}
-            className="bg-neutral-800 border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+            className="bg-neutral-200 dark:bg-neutral-800 border-neutral-300 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
-            <h3 className="text-xl sm:text-3xl rounded font-semibold">
+            <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
@@ -147,7 +147,7 @@ export default function Page() {
       </div>
       <div className="gradient-bg-80">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col min-h-[calc(90vh)]">
-          <h2 className="text-3xl sm:text-6xl py-0.5 rounded font-semibold">
+          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold">
             Contact Me
           </h2>
           <p>
