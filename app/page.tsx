@@ -99,7 +99,7 @@ export default function Home() {
             Lorem ipsum odor amet, consectetuer adipiscing elit.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid sm:grid-cols-2 gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           <Link
             href={"/work/oll-trainer"}
             className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
