@@ -31,12 +31,14 @@ export default function Home() {
                 Gabriel Shiu
               </h1>
               <p>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum
-                nostra mus phasellus potenti hac. Class blandit gravida semper;
-                pharetra amet nibh sem dis? Donec consequat sagittis augue
-                curabitur dapibus ornare dapibus facilisis. Venenatis maecenas
-                eros suspendisse nec ultrices platea. Bibendum massa nibh
-                ridiculus lorem mus. Egestas
+                I’m a lifelong learner and teacher, passionate about growing as
+                a software engineer and helping my peers along the way!
+                <br />
+                <br />
+                Over the past year, I&apos;ve interned at ButcherBox and
+                Citizens Bank, and have continued learning through personal
+                projects. I plan to enter industry in 2025—I am excited to build
+                innovative software and inspire others!
               </p>
               <div className="flex flex-row">
                 <a
