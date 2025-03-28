@@ -7,7 +7,7 @@ export default function Page() {
       <div className="gradient-bg-80">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
           <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
-            ButcherBox Internship
+            Citizens Bank Internship
           </h1>
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum nostra
@@ -20,8 +20,10 @@ export default function Page() {
             <div className="space-y-2">
               <strong>Stack</strong>
               <p>React</p>
-              <p>Contentful</p>
-              <p>Datadog</p>
+              <p>Postgres</p>
+              <p>Tailwind CSS</p>
+              <p>Java</p>
+              <p>Spring Boot</p>
             </div>
             <div className="space-y-2">
               <strong>Year</strong>
@@ -30,7 +32,7 @@ export default function Page() {
             <div className="space-y-2">
               <strong>Link</strong>
               <Link
-                href={"https://www.butcherbox.com/"}
+                href={"https://example.com/"}
                 className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-white py-4 px-4 sm:px-5"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,10 +45,10 @@ export default function Page() {
       </div>
       <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
         <Image
-          src="/butcherbox-ss.png"
+          src="/citizens-ss.jpeg"
           alt="project thumbnail"
-          width={3248}
-          height={2112}
+          width={4096}
+          height={1828}
           priority
         />
         <div>
@@ -71,10 +73,10 @@ export default function Page() {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
           <Image
-            src="/butcherbox-ss.png"
+            src="/citizens-ss.jpeg"
             alt="project thumbnail"
-            width={3248}
-            height={2112}
+            width={4096}
+            height={1828}
             priority
           />
           <div>
@@ -110,22 +112,21 @@ export default function Page() {
         </div>
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           <Link
-            href={"/work/citizens"}
+            href={"/work/butcherbox"}
             className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
             <h3 className="text-xl md:text-3xl font-semibold">
-              Citizens Bank Internship
+              ButcherBox Internship
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
             <p className="font-medium hover:underline">view project {"->"}</p>
             <div className="flex-1 flex">
               <Image
-                src="/citizens-ss.jpeg"
+                src="/butcherbox-ss.png"
                 alt="project thumbnail"
-                width={4096}
-                height={1828}
+                width={3248}
+                height={2112}
                 priority
-                className="m-auto"
               />
             </div>
           </Link>

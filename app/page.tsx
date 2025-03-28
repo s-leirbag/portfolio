@@ -109,13 +109,35 @@ export default function Home() {
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
             <p className="font-medium hover:underline">view project {"->"}</p>
-            <Image
-              src="/butcherbox-ss.png"
-              alt="project thumbnail"
-              width={2852}
-              height={2112}
-              priority
-            />
+            <div className="flex-1 flex">
+              <Image
+                src="/butcherbox-ss.png"
+                alt="project thumbnail"
+                width={3248}
+                height={2112}
+                priority
+              />
+            </div>
+          </Link>
+          <Link
+            href={"/work/citizens"}
+            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
+          >
+            <h3 className="text-xl md:text-3xl font-semibold">
+              Citizens Bank Internship
+            </h3>
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+            <p className="font-medium hover:underline">view project {"->"}</p>
+            <div className="flex-1 flex">
+              <Image
+                src="/citizens-ss.jpeg"
+                alt="project thumbnail"
+                width={4096}
+                height={1828}
+                priority
+                className="m-auto"
+              />
+            </div>
           </Link>
           <Link
             href={"/work/oll-trainer"}
@@ -126,30 +148,15 @@ export default function Home() {
             </h3>
             <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
             <p className="font-medium hover:underline">view project {"->"}</p>
-            <Image
-              src="/oll-trainer-ss.png"
-              alt="project thumbnail"
-              width={2852}
-              height={2112}
-              priority
-            />
-          </Link>
-          <Link
-            href={"/work/oll-trainer"}
-            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
-          >
-            <h3 className="text-xl md:text-3xl font-semibold">
-              Rubiks Cube Trainer
-            </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
-            <Image
-              src="/oll-trainer-ss.png"
-              alt="project thumbnail"
-              width={2852}
-              height={2112}
-              priority
-            />
+            <div className="flex-1 flex">
+              <Image
+                src="/oll-trainer-ss.png"
+                alt="project thumbnail"
+                width={3248}
+                height={2112}
+                priority
+              />
+            </div>
           </Link>
         </div>
       </div>
