@@ -21,23 +21,13 @@ body {
 }
 
 @layer utilities {
-  .gradient-bg-70 {
-    background: radial-gradient(ellipse, white 0%, transparent 70%);
+  .gradient-bg-100 {
+    background: radial-gradient(ellipse, white 0%, transparent 100%);
   }
 
   @media (prefers-color-scheme: dark) {
-    .gradient-bg-70 {
-      background: radial-gradient(ellipse, black 0%, transparent 70%);
-    }
-  }
-
-  .gradient-bg-80 {
-    background: radial-gradient(ellipse, white 0%, transparent 80%);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .gradient-bg-80 {
-      background: radial-gradient(ellipse, black 0%, transparent 80%);
+    .gradient-bg-100 {
+      background: radial-gradient(ellipse, black 0%, transparent 100%);
     }
   }
 

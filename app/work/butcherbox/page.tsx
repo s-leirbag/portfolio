@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="gradient-bg-70">
-      <div className="gradient-bg-80">
+    <div className="gradient-bg-100">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
           <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
             ButcherBox Internship
@@ -99,7 +99,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="gradient-bg-80">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
           <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold text-shadow-50px">
             Other Work
@@ -150,7 +150,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
-      <div className="gradient-bg-80">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col min-h-[calc(90vh)]">
           <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold">
             Contact Me

@@ -4,8 +4,8 @@ import ScrollButton from "./ui/ScrollButton";
 
 export default function Home() {
   return (
-    <div className="gradient-bg-70">
-      <div className="gradient-bg-80">
+    <div className="gradient-bg-100">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto flex flex-col justify-between gap-8 min-h-screen">
           <h1 className="sm:text-xl py-0.5 font-semibold text-center">
             work in progress...
@@ -30,9 +30,10 @@ export default function Home() {
               <h1 className="text-5xl md:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
                 Gabriel Shiu
               </h1>
-              <p>
-                I’m a lifelong learner and teacher, passionate about growing as
-                a software engineer and helping my peers along the way!
+              <p className="text-neutral-600 dark:text-neutral-300">
+                I&apos;m a lifelong learner and teacher, passionate about
+                growing as a software engineer and helping my peers along the
+                way!
                 <br />
                 <br />
                 Over the past year, I&apos;ve interned at ButcherBox and
@@ -92,13 +93,14 @@ export default function Home() {
           <ScrollButton />
         </div>
       </div>
-      <div className="gradient-bg-80">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
           <h2 className="text-3xl md:text-6xl py-0.5 font-semibold text-shadow-50px">
             Work
           </h2>
-          <p className="text-shadow-20px">
-            Lorem ipsum odor amet, consectetuer adipiscing elit.
+          <p className="text-shadow-20px text-neutral-600 dark:text-neutral-300">
+            I learn by doing! Take a look at some of my past and ongoing
+            projects.
           </p>
         </div>
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
@@ -109,8 +111,11 @@ export default function Home() {
             <h3 className="text-xl md:text-3xl font-semibold">
               ButcherBox Internship
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              My summer web development internship at ButcherBox, an e-commerce
+              company.
+            </p>
+            <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
               <Image
                 src="/butcherbox-ss.png"
@@ -128,8 +133,10 @@ export default function Home() {
             <h3 className="text-xl md:text-3xl font-semibold">
               Citizens Bank Internship
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              My time as an intern at Citizens Bank.
+            </p>
+            <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
               <Image
                 src="/citizens-ss.jpeg"
@@ -148,7 +155,9 @@ export default function Home() {
             <h3 className="text-xl md:text-3xl font-semibold">
               Rubiks Cube Trainer
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              My first web project!
+            </p>
             <p className="font-medium hover:underline">view project {"->"}</p>
             <div className="flex-1 flex">
               <Image
@@ -162,17 +171,13 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className="gradient-bg-80">
+      <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
           <h1 className="text-3xl md:text-6xl py-0.5 font-semibold">
             Contact Me
           </h1>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum nostra
-            mus phasellus potenti hac. Class blandit gravida semper; pharetra
-            amet nibh sem dis? Donec consequat sagittis augue curabitur dapibus
-            ornare dapibus facilisis. Venenatis maecenas eros suspendisse nec
-            ultrices platea. Bibendum massa nibh ridiculus lorem mus. Egestas
+          <p className="text-neutral-600 dark:text-neutral-300">
+            You can find me on social media! Email form coming soon...
           </p>
           <div className="flex flex-row">
             <a

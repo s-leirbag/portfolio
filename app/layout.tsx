@@ -48,9 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased dark:bg-black dark:text-neutral-50 md:text-lg font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#e5e5e5_3px,transparent_3px)] dark:bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased md:text-lg font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#e5e5e5_3px,transparent_3px)] dark:bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px]`}
       >
-        <div className="absolute w-28 md:w-32 p-8 gradient-bg-70">
+        <div className="absolute w-28 md:w-32 p-8 gradient-bg-100">
           <Link href={"/"}>
             <Image
               src="/logo-1-dot-fat-dark.png"
