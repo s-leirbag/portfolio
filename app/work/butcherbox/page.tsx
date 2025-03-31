@@ -23,8 +23,9 @@ export default function Page() {
               , a subscription-based meat delivery service that specializes in
               providing high-quality meat directly to customers&apos; doors! As
               a Web Development Intern, I worked alongside one of their hybrid
-              teams, pair-programming and participating in standups/retros/etc.
-              This was my first internship. I got to learn so much!
+              teams, pair-programming and participating in stand-ups,
+              retro&apos;s, and more. This was my first internship. I got to
+              learn so much!
             </p>
             <div>
               I did 3 main things:
@@ -34,7 +35,10 @@ export default function Page() {
                   Increase Datadog observability by adding RUM actions and
                   dashboards
                 </li>
-                <li>Refine UI components—and have fun issues with prefetching and responsiveness</li>
+                <li>
+                  Refine UI components—and have fun issues with prefetching and
+                  responsiveness
+                </li>
               </ul>
             </div>
           </div>
@@ -70,12 +74,13 @@ export default function Page() {
             My main project had to do with our Content Management System,
             Contentful! We had a bunch of flexible but complex content templates
             that pained content authors each week. These templates allowed for a
-            variety configurations of headings, positionings, colors, and links.
-            This gave great customization and standardization across our site!
-            But, since Contentful is headless, by default we can&apos;t
-            visualize what configurations are possible within our templates. We
-            had to reference textual documentation in a tedious manner, wasting
-            time and risking making mistakes or creating worse content designs.
+            variety of configurations of headings, colors, links, and
+            positioning. This gave great customization and standardization
+            across our site! But, since Contentful is headless, by default we
+            can&apos;t visualize what configurations are possible within our
+            templates. We had to reference textual documentation in a tedious
+            manner, wasting time and risking making mistakes or creating worse
+            content designs.
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
@@ -115,9 +120,9 @@ export default function Page() {
             out the pages. One huge part of the project was generating all
             possible content permutations from our templates. I paired with an
             engineer and used test-driven development to cover all possible
-            content permutations and detailed nuances. This required me to gain
-            a thorough understanding of our content model and spend a ton of
-            time in Contentful.
+            content permutations and detailed nuances. This required me to spend
+            a ton of time in Contentful and gain a thorough understanding of our
+            content model.
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
@@ -159,9 +164,8 @@ export default function Page() {
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
             While developing this tool, we demo&apos;d our progress in sprint
             reviews and the tool began to be used even during development!
-            Overall, it helped content authors more easily create great
-            copywriting to help customers get high-quality meat to their
-            stomachs!
+            Overall, it helped content authors create great copywriting to help
+            get high-quality meat to customers!
           </p>
         </div>
         <div className="lg:pr-64">
@@ -170,8 +174,8 @@ export default function Page() {
           </h3>
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
             I learned a ton about Contentful, Datadog, React Router, Storybook,
-            and Jest. I got to dive deeper into the basics of Typescript, React,
-            Git, and even Chrome Dev Tools for debugging.
+            and Jest. I dove deeper into the basics of Typescript, React, Git,
+            and even Chrome Dev Tools for debugging.
             <br />
             <br />
             I was surprised how little time you spend actually writing code
@@ -182,10 +186,10 @@ export default function Page() {
             review.
             <br />
             <br />I also learned a lot from pair-programming. I learned to write
-            pseudocode, discern what rabbit holes to pursue or leave, and the
-            usefulness of test-driven development. I loved working in a real
-            engineering environment. I love growing my hard and soft skills, and
-            have a long way to go!
+            pseudocode, to discern what rabbit holes to pursue or leave, and to
+            use test-driven development. I loved working in a real engineering
+            environment and growing my hard and soft skills. I have a long way
+            to go!
           </p>
         </div>
       </div>
