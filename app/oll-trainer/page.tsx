@@ -110,7 +110,7 @@ export default function Page() {
         </div>
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           <Link
-            href={"/work/butcherbox"}
+            href={"/butcherbox"}
             className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
             <h3 className="text-xl md:text-3xl font-semibold">
@@ -129,7 +129,7 @@ export default function Page() {
             </div>
           </Link>
           <Link
-            href={"/work/citizens"}
+            href={"/citizens"}
             className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
           >
             <h3 className="text-xl md:text-3xl font-semibold">
