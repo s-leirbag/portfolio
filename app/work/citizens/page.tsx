@@ -45,7 +45,7 @@ export default function Page() {
       </div>
       <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
         <Image
-          src="/citizens-ss.jpeg"
+          src="/citizens/citizens-ss.jpeg"
           alt="project thumbnail"
           width={4096}
           height={1828}
@@ -73,7 +73,7 @@ export default function Page() {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
           <Image
-            src="/citizens-ss.jpeg"
+            src="/citizens/citizens-ss.jpeg"
             alt="project thumbnail"
             width={4096}
             height={1828}
@@ -118,11 +118,11 @@ export default function Page() {
             <h3 className="text-xl md:text-3xl font-semibold">
               ButcherBox Internship
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+            <p>My summer internship at an e-commerce company.</p>
             <p className="font-medium hover:underline">view project {"->"}</p>
             <div className="flex-1 flex">
               <Image
-                src="/butcherbox-ss.png"
+                src="/butcherbox/butcherbox-ss.png"
                 alt="project thumbnail"
                 width={3248}
                 height={2112}
@@ -141,7 +141,7 @@ export default function Page() {
             <p className="font-medium hover:underline">view project {"->"}</p>
             <div className="flex-1 flex">
               <Image
-                src="/oll-trainer-ss.png"
+                src="/oll-trainer/oll-trainer-ss.png"
                 alt="project thumbnail"
                 width={3248}
                 height={2112}

@@ -60,7 +60,7 @@ export default function Page() {
       </div>
       <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
         <Image
-          src="/butcherbox-ss.png"
+          src="/butcherbox/butcherbox-ss.png"
           alt="project thumbnail"
           width={3248}
           height={2112}
@@ -85,14 +85,14 @@ export default function Page() {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
           <Image
-            src="/visualize.svg"
+            src="/butcherbox/visualize.svg"
             alt="Visualizing Content Templates"
             width={1920}
             height={1080}
             className="dark:hidden m-auto"
           />
           <Image
-            src="/visualize-dark.svg"
+            src="/butcherbox/visualize-dark.svg"
             alt="Visualizing Content Templates"
             width={1920}
             height={1080}
@@ -127,14 +127,14 @@ export default function Page() {
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8">
           <Image
-            src="/filter.svg"
+            src="/butcherbox/filter.svg"
             alt="filtering"
             width={1920}
             height={1080}
             className="dark:hidden m-auto"
           />
           <Image
-            src="/filter-dark.svg"
+            src="/butcherbox/filter-dark.svg"
             alt="filtering"
             width={1920}
             height={1080}
@@ -217,7 +217,7 @@ export default function Page() {
             <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
               <Image
-                src="/citizens-ss.jpeg"
+                src="/citizens/citizens-ss.jpeg"
                 alt="project thumbnail"
                 width={4096}
                 height={1828}
@@ -238,7 +238,7 @@ export default function Page() {
             <p className="font-medium hover:underline">view project {"->"}</p>
             <div className="flex-1 flex">
               <Image
-                src="/oll-trainer-ss.png"
+                src="/oll-trainer/oll-trainer-ss.png"
                 alt="project thumbnail"
                 width={3248}
                 height={2112}
