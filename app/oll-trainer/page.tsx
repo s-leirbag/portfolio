@@ -69,14 +69,16 @@ export default function Page() {
             amet nibh sem dis?
           </p>
         </div>
-        <div className="lg:grid lg:grid-cols-2 gap-8">
-          <Image
-            src="/oll-trainer/oll-trainer-ss.png"
-            alt="project thumbnail"
-            width={3248}
-            height={2112}
-            priority
-          />
+        <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+          <div className="m-auto">
+            <Image
+              src="/oll-trainer/oll-trainer-ss.png"
+              alt="project thumbnail"
+              width={3248}
+              height={2112}
+              priority
+            />
+          </div>
           <div>
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
               Problem

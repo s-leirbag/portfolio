@@ -83,21 +83,23 @@ export default function Page() {
             content designs.
           </p>
         </div>
-        <div className="lg:grid lg:grid-cols-2 gap-8">
-          <Image
-            src="/butcherbox/visualize.svg"
-            alt="Visualizing Content Templates"
-            width={1920}
-            height={1080}
-            className="dark:hidden m-auto"
-          />
-          <Image
-            src="/butcherbox/visualize-dark.svg"
-            alt="Visualizing Content Templates"
-            width={1920}
-            height={1080}
-            className="hidden dark:inline-block m-auto"
-          />
+        <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+          <div className="m-auto">
+            <Image
+              src="/butcherbox/visualize.svg"
+              alt="Visualizing Content Templates"
+              width={1920}
+              height={1080}
+              className="dark:hidden"
+            />
+            <Image
+              src="/butcherbox/visualize-dark.svg"
+              alt="Visualizing Content Templates"
+              width={1920}
+              height={1080}
+              className="hidden dark:inline-block"
+            />
+          </div>
           <div>
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
               Visualizing Content Templates
@@ -125,21 +127,23 @@ export default function Page() {
             content model.
           </p>
         </div>
-        <div className="lg:grid lg:grid-cols-2 gap-8">
-          <Image
-            src="/butcherbox/filter.svg"
-            alt="filtering"
-            width={1920}
-            height={1080}
-            className="dark:hidden m-auto"
-          />
-          <Image
-            src="/butcherbox/filter-dark.svg"
-            alt="filtering"
-            width={1920}
-            height={1080}
-            className="hidden dark:inline-block m-auto"
-          />
+        <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+          <div className="m-auto">
+            <Image
+              src="/butcherbox/filter.svg"
+              alt="filtering"
+              width={1920}
+              height={1080}
+              className="dark:hidden"
+            />
+            <Image
+              src="/butcherbox/filter-dark.svg"
+              alt="filtering"
+              width={1920}
+              height={1080}
+              className="hidden dark:inline-block"
+            />
+          </div>
           <div>
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
               Challenge: Filtering
