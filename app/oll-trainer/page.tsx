@@ -12,14 +12,7 @@ export default function Page() {
             {"Rubik's"} Cube Trainer
           </h1>
           <p>
-            work in progress...
-            <br />
-            <Link
-              href={"https://github.com/s-leirbag/portfolio"}
-              className="hover:underline text-sky-500"
-            >
-              https://github.com/s-leirbag/portfolio
-            </Link>
+            work in progress...enjoy some lorum ipsum
           </p>
           <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 gap-y-8 max-w-lg">
             <div className="space-y-2">
