@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContactMe() {
   return (
     <div className="gradient-bg-100">
-      <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
+      <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
         <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">
           Contact Me
         </h2>

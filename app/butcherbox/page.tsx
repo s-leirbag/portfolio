@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="gradient-bg-100">
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
           <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
             ButcherBox Internship
           </h1>
@@ -60,7 +60,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
+      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
         <Image
           src="/butcherbox/butcherbox-ss.png"
           alt="project thumbnail"
@@ -212,7 +212,7 @@ export default function Page() {
         </div>
       </div>
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
+        <div className="w-full sm:w-[640px] lg:w-[768px] px-4 sm:px-16 m-auto">
           <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
@@ -221,7 +221,7 @@ export default function Page() {
             projects.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-4 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           <ProjectCard
             title="Citizens Bank Internship"
             desc="My time as an intern at Citizens Bank."

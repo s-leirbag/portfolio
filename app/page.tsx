@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="gradient-bg-100">
       <div className="gradient-bg-100">
-        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto flex flex-col justify-center gap-8 min-h-screen">
+        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 pt-24 px-4 md:px-16 mx-auto flex flex-col justify-center gap-8 min-h-screen">
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </div>
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
+        <div className="w-full sm:w-[640px] lg:w-[768px] px-4 sm:px-16 m-auto">
           <h2 className="text-3xl md:text-6xl py-0.5 pt-16 font-semibold text-shadow-50px">
             Work
           </h2>
@@ -94,7 +94,7 @@ export default function Home() {
             projects.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-4 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
           <ProjectCard
             title="ButcherBox Internship"
             desc="My summer e-commerce internship."
@@ -114,7 +114,7 @@ export default function Home() {
             imageHeight={1777}
           />
           <ProjectCard
-            title="Brigham & Women&apos;s Hospital Application"
+            title="Brigham & Women's Hospital Application"
             desc="Leading an 11-person agile project."
             href="/hospital"
             cta="view project"
