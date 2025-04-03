@@ -81,7 +81,6 @@ export default function Page() {
               alt="project thumbnail"
               width={3248}
               height={2112}
-              priority
             />
           </div>
           <div>

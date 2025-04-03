@@ -119,7 +119,6 @@ export default function Page() {
           alt="what's in the box"
           width={3248}
           height={2112}
-          priority
         />
         <div className="text-center lg:px-32">
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
@@ -175,7 +174,6 @@ export default function Page() {
           alt="fish smooch"
           width={3248}
           height={2112}
-          priority
         />
         <div className="text-center lg:px-32">
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
