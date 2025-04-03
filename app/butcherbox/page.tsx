@@ -213,7 +213,7 @@ export default function Page() {
       </div>
       <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
-          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold text-shadow-50px">
+          <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
           <p className="text-shadow-20px leading-loose text-neutral-600 dark:text-neutral-300">
@@ -266,11 +266,11 @@ export default function Page() {
         </div>
       </div>
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col min-h-[calc(90vh)]">
-          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold">
+        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
+          <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">
             Contact Me
           </h2>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+          <p className="text-neutral-600 dark:text-neutral-300">
             You can find me on social media! Email form coming soon...
           </p>
           <div className="flex flex-row">
@@ -320,6 +320,12 @@ export default function Page() {
               </svg>
             </a>
           </div>
+          <Link
+            href={"https://github.com/s-leirbag/portfolio"}
+            className="w-full absolute left-0 bottom-0 block p-8 sm:text-xl text-center hover:underline text-sky-500"
+          >
+            https://github.com/s-leirbag/portfolio
+          </Link>
         </div>
       </div>
     </div>

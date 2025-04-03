@@ -6,17 +6,7 @@ export default function Home() {
   return (
     <div className="gradient-bg-100">
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto flex flex-col justify-between gap-8 min-h-screen">
-          <h1 className="sm:text-xl py-0.5 font-semibold text-center">
-            work in progress...
-            <br />
-            <Link
-              href={"https://github.com/s-leirbag/portfolio"}
-              className="hover:underline text-sky-500"
-            >
-              https://github.com/s-leirbag/portfolio
-            </Link>
-          </h1>
+        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:px-16 mx-auto flex flex-col justify-center gap-8 min-h-screen">
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
@@ -95,7 +85,7 @@ export default function Home() {
       </div>
       <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
-          <h2 className="text-3xl md:text-6xl py-0.5 font-semibold text-shadow-50px">
+          <h2 className="text-3xl md:text-6xl py-0.5 pt-16 font-semibold text-shadow-50px">
             Work
           </h2>
           <p className="text-shadow-20px text-neutral-600 dark:text-neutral-300">
@@ -171,10 +161,10 @@ export default function Home() {
         </div>
       </div>
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
-          <h1 className="text-3xl md:text-6xl py-0.5 font-semibold">
+        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
+          <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">
             Contact Me
-          </h1>
+          </h2>
           <p className="text-neutral-600 dark:text-neutral-300">
             You can find me on social media! Email form coming soon...
           </p>
@@ -225,6 +215,12 @@ export default function Home() {
               </svg>
             </a>
           </div>
+          <Link
+            href={"https://github.com/s-leirbag/portfolio"}
+            className="w-full absolute left-0 bottom-0 block p-8 sm:text-xl text-center hover:underline text-sky-500"
+          >
+            https://github.com/s-leirbag/portfolio
+          </Link>
         </div>
       </div>
     </div>

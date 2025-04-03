@@ -10,11 +10,14 @@ export default function Page() {
             {"Rubik's"} Cube Trainer
           </h1>
           <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum nostra
-            mus phasellus potenti hac. Class blandit gravida semper; pharetra
-            amet nibh sem dis? Donec consequat sagittis augue curabitur dapibus
-            ornare dapibus facilisis. Venenatis maecenas eros suspendisse nec
-            ultrices platea. Bibendum massa nibh ridiculus lorem mus. Egestas
+            work in progress...
+            <br />
+            <Link
+              href={"https://github.com/s-leirbag/portfolio"}
+              className="hover:underline text-sky-500"
+            >
+              https://github.com/s-leirbag/portfolio
+            </Link>
           </p>
           <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 gap-y-8 max-w-lg">
             <div className="space-y-2">
@@ -103,11 +106,12 @@ export default function Page() {
       </div>
       <div className="gradient-bg-100">
         <div className="w-full sm:w-[640px] lg:w-[768px] px-8 sm:px-16 m-auto">
-          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold text-shadow-50px">
+          <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
-          <p className="text-shadow-20px">
-            Lorem ipsum odor amet, consectetuer adipiscing elit.
+          <p className="text-shadow-20px leading-loose text-neutral-600 dark:text-neutral-300">
+            I learn by doing! Take a look at some of my past and ongoing
+            projects.
           </p>
         </div>
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
@@ -118,8 +122,10 @@ export default function Page() {
             <h3 className="text-xl md:text-3xl font-semibold">
               ButcherBox Internship
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              My summer e-commerce internship.
+            </p>
+            <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
               <Image
                 src="/butcherbox/butcherbox-ss.png"
@@ -137,15 +143,16 @@ export default function Page() {
             <h3 className="text-xl md:text-3xl font-semibold">
               Citizens Bank Internship
             </h3>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
+            <p className="text-neutral-600 dark:text-neutral-300">
+              My time as an intern at Citizens Bank.
+            </p>
+            <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
               <Image
                 src="/citizens/citizens-ss.jpeg"
                 alt="project thumbnail"
                 width={4096}
                 height={1777}
-                priority
                 className="m-auto"
               />
             </div>
@@ -153,16 +160,12 @@ export default function Page() {
         </div>
       </div>
       <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] p-16 mx-auto pt-[calc(25vh)] gap-2 flex flex-col min-h-[calc(90vh)]">
-          <h2 className="text-3xl md:text-6xl py-0.5 rounded font-semibold">
+        <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-8 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
+          <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">
             Contact Me
           </h2>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Rutrum nostra
-            mus phasellus potenti hac. Class blandit gravida semper; pharetra
-            amet nibh sem dis? Donec consequat sagittis augue curabitur dapibus
-            ornare dapibus facilisis. Venenatis maecenas eros suspendisse nec
-            ultrices platea. Bibendum massa nibh ridiculus lorem mus. Egestas
+          <p className="text-neutral-600 dark:text-neutral-300">
+            You can find me on social media! Email form coming soon...
           </p>
           <div className="flex flex-row">
             <a
@@ -211,6 +214,12 @@ export default function Page() {
               </svg>
             </a>
           </div>
+          <Link
+            href={"https://github.com/s-leirbag/portfolio"}
+            className="w-full absolute left-0 bottom-0 block p-8 sm:text-xl text-center hover:underline text-sky-500"
+          >
+            https://github.com/s-leirbag/portfolio
+          </Link>
         </div>
       </div>
     </div>

@@ -41,6 +41,7 @@ export default function ScrollButton() {
     <button
       onClick={scrollToNextSection}
       className={cn(
+        "absolute bottom-16",
         "self-center",
         "bg-sky-500 text-primary-foreground rounded-full p-3",
         "shadow-lg transition-all duration-300",
