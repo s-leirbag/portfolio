@@ -112,7 +112,7 @@ export default function Home() {
               ButcherBox Internship
             </h3>
             <p className="text-neutral-600 dark:text-neutral-300">
-              My summer internship at an e-commerce company.
+              My summer e-commerce internship.
             </p>
             <p className="font-medium hover:underline">read story {"->"}</p>
             <div className="flex-1 flex">
@@ -141,7 +141,7 @@ export default function Home() {
                 src="/citizens/citizens-ss.jpeg"
                 alt="project thumbnail"
                 width={4096}
-                height={1828}
+                height={1777}
                 priority
                 className="m-auto"
               />

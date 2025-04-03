@@ -224,7 +224,7 @@ export default function Page() {
                 src="/citizens/citizens-ss.jpeg"
                 alt="project thumbnail"
                 width={4096}
-                height={1828}
+                height={1777}
                 className="m-auto"
               />
             </div>
