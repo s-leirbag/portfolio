@@ -114,6 +114,15 @@ export default function Home() {
             imageHeight={1777}
           />
           <ProjectCard
+            title="Brigham & Women&apos;s Hospital Application"
+            desc="Leading an 11-person agile project."
+            href="/hospital"
+            cta="view project"
+            imageSrc="/hospital/path.png"
+            imageWidth={1920}
+            imageHeight={1080}
+          />
+          <ProjectCard
             title="Rubiks Cube Trainer"
             desc="My first web project!"
             href="/oll-trainer"

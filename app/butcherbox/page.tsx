@@ -232,13 +232,13 @@ export default function Page() {
             imageHeight={1777}
           />
           <ProjectCard
-            title="Rubiks Cube Trainer"
-            desc="My first web project!"
-            href="/oll-trainer"
+            title="Brigham & Women's Hospital Application"
+            desc="Leading an 11-person agile project."
+            href="/hospital"
             cta="view project"
-            imageSrc="/oll-trainer/oll-trainer-ss.png"
-            imageWidth={3248}
-            imageHeight={2112}
+            imageSrc="/hospital/path.png"
+            imageWidth={1920}
+            imageHeight={1080}
           />
         </div>
       </div>
