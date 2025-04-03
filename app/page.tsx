@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import ScrollButton from "./ui/ScrollButton";
 import ContactMe from "./ui/ContactMe";
+import ProjectCard from "./ui/ProjectCard";
 
 export default function Home() {
   return (
@@ -95,70 +95,33 @@ export default function Home() {
           </p>
         </div>
         <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-8 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
-          <Link
-            href={"/butcherbox"}
-            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
-          >
-            <h3 className="text-xl md:text-3xl font-semibold">
-              ButcherBox Internship
-            </h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              My summer e-commerce internship.
-            </p>
-            <p className="font-medium hover:underline">read story {"->"}</p>
-            <div className="flex-1 flex">
-              <Image
-                src="/butcherbox/butcherbox-ss.png"
-                alt="project thumbnail"
-                width={3248}
-                height={2112}
-                priority
-              />
-            </div>
-          </Link>
-          <Link
-            href={"/citizens"}
-            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
-          >
-            <h3 className="text-xl md:text-3xl font-semibold">
-              Citizens Bank Internship
-            </h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              My time as an intern at Citizens Bank.
-            </p>
-            <p className="font-medium hover:underline">read story {"->"}</p>
-            <div className="flex-1 flex">
-              <Image
-                src="/citizens/citizens-ss.jpeg"
-                alt="project thumbnail"
-                width={4096}
-                height={1777}
-                priority
-                className="m-auto"
-              />
-            </div>
-          </Link>
-          <Link
-            href={"/oll-trainer"}
-            className="bg-neutral-100 dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 border rounded-xl p-6 flex flex-col gap-2"
-          >
-            <h3 className="text-xl md:text-3xl font-semibold">
-              Rubiks Cube Trainer
-            </h3>
-            <p className="text-neutral-600 dark:text-neutral-300">
-              My first web project!
-            </p>
-            <p className="font-medium hover:underline">view project {"->"}</p>
-            <div className="flex-1 flex">
-              <Image
-                src="/oll-trainer/oll-trainer-ss.png"
-                alt="project thumbnail"
-                width={3248}
-                height={2112}
-                priority
-              />
-            </div>
-          </Link>
+          <ProjectCard
+            title="ButcherBox Internship"
+            desc="My summer e-commerce internship."
+            href="/butcherbox"
+            cta="read story"
+            imageSrc="/butcherbox/butcherbox-ss.png"
+            imageWidth={3248}
+            imageHeight={2112}
+          />
+          <ProjectCard
+            title="Citizens Bank Internship"
+            desc="My time as an intern at Citizens Bank."
+            href="/citizens"
+            cta="read story"
+            imageSrc="/citizens/citizens-ss.jpeg"
+            imageWidth={4096}
+            imageHeight={1777}
+          />
+          <ProjectCard
+            title="Rubiks Cube Trainer"
+            desc="My first web project!"
+            href="/oll-trainer"
+            cta="view project"
+            imageSrc="/oll-trainer/oll-trainer-ss.png"
+            imageWidth={3248}
+            imageHeight={2112}
+          />
         </div>
       </div>
       <ContactMe />
