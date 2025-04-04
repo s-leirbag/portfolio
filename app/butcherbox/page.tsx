@@ -221,7 +221,7 @@ export default function Page() {
             projects.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-4 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
+        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-4 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
           <ProjectCard
             title="Citizens Bank Internship"
             desc="My time as an intern at Citizens Bank."
