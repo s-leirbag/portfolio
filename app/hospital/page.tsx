@@ -19,18 +19,19 @@ export default function Page() {
               lead the team as an Assistant Lead Developer, mentoring younger
               engineers and guiding decisions. We simulated a modern software
               team, with front-end and back-end developers, a scrum master, PM,
-              PO, and leads!
+              PO, and leads! I worked on all parts of the codebase but focused
+              on the front-end.
             </p>
             <div>
               Core features:
               <ul className="list-disc list-inside pl-4">
-                <li>Employee management</li>
-                <li>Request services to specific rooms</li>
                 <li>
                   Hospital map navigation with a Voice AI assistant and
                   on-the-go mobile directions
                 </li>
+                <li>Request services to specific rooms</li>
                 <li>Admin and employee login with OAuth through Auth0</li>
+                <li>Employee management</li>
                 <li>Responsive design</li>
               </ul>
             </div>
@@ -82,24 +83,89 @@ export default function Page() {
             Goal: Modernize Hospital Management
           </h3>
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            todo...
+            Hospitals need to run quickly and smoothly to save lives. But, they
+            are extremely complex to manage. We architected a prototype hospital
+            management app for Brigham & Women&apos;s Hospital. The app would
+            theoretically run on kiosks placed throughout the hospital. It
+            guides visitors through the huge building and helps employees
+            request services and manage staff.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/hospital/directions-text-and-mobile.png"
+            alt="hospital map with navigation directions"
+            width={1920}
+            height={1080}
+            className="mb-8"
+          />
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+            1. Simplifying Hospital Navigation
+          </h3>
+          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+            Our app streamlined hospital navigation. It displays a map of each
+            floor with interactive nodes for different rooms. Users can
+            automatically generate optimized, visual paths between rooms. They
+            also get a textual list of directions and can scan a QR code to take
+            the directions on-the-go on their phone!
+            <br />
+            <br />
+            The graph was loaded into our database from CSV data. We used the
+            Canvas API to render the map. This was very complex! I connected the
+            Canvas API with React for buttons and state. We implemented various
+            pathfinding algorithms like A* and Dijkstra&apos;s, using the Strategy
+            design pattern for clean code.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/hospital/service-request-creation.png"
+            alt="service request creation"
+            width={1920}
+            height={1080}
+            className="mb-8"
+          />
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+            2. Service Requests
+          </h3>
+          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+            We integrated jobs into the map. Staff can request services like
+            sanitation, transport, and language interpretation to specific
+            rooms. They can request specific employees and give details.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/hospital/service-request-admin-view.png"
+            alt="list of service requests from a hospital admin's view"
+            width={1920}
+            height={1080}
+            className="mb-8"
+          />
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+            Handling Service Requests
+          </h3>
+          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+            Employees can log into the kiosk using OAuth with Auth0. They can
+            view their assigned service requests and mark them completed.
+            Hospital admins can log in and view requests for all employees and
+            filter accordingly.
+            <br />
+            <br />I did a lot of the login management, showing the appropriate
+            pages and information based on the employee. I paired with a newer
+            teammate and mentored him to eventually flesh out the authentication
+            features on his own! I also did a lot of the request displaying,
+            filtering, and data management. This was my first big experience
+            working with authentication and databases and I learned a lot!
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
           <div className="m-auto">
             <Image
-              src="1920x1080.svg"
+              src="/1920x1080.svg"
               alt="placeholder"
               width={1920}
               height={1080}
-              className="dark:hidden"
-            />
-            <Image
-              src="1920x1080.svg"
-              alt="placeholder"
-              width={1920}
-              height={1080}
-              className="hidden dark:inline-block"
             />
           </div>
           <div>
@@ -107,7 +173,7 @@ export default function Page() {
               todo...
             </h3>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-              todo...
+              todo too...
             </p>
           </div>
         </div>
