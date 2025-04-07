@@ -76,13 +76,14 @@ export default function Page() {
           height={1777}
           priority
         />
-        <Image
-          src="/citizens/open-banking.jpeg"
-          alt="open banking diagram"
-          width={1366}
-          height={768}
-        />
         <div>
+          <Image
+            src="/citizens/open-banking.jpeg"
+            alt="open banking diagram"
+            width={1366}
+            height={768}
+            className="mb-8"
+          />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Open Banking Context
           </h3>
@@ -189,13 +190,14 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <Image
-          src="/citizens/architecture.svg"
-          alt="architecture"
-          width={800}
-          height={450}
-        />
         <div>
+          <Image
+            src="/citizens/architecture.svg"
+            alt="architecture"
+            width={800}
+            height={450}
+            className="mb-8"
+          />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Architecture
           </h3>
