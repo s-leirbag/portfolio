@@ -100,7 +100,7 @@ export default function Page() {
             className="mb-8"
           />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            1. Simplifying Hospital Navigation
+            Simplifying Hospital Navigation
           </h3>
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
             Our app streamlined hospital navigation. It displays a map of each
@@ -110,11 +110,11 @@ export default function Page() {
             the directions on-the-go on their phone!
             <br />
             <br />
-            The graph was loaded into our database from CSV data. We used the
-            Canvas API to render the map. This was very complex! I connected the
-            Canvas API with React for buttons and state. We implemented various
-            pathfinding algorithms like A* and Dijkstra&apos;s, using the Strategy
-            design pattern for clean code.
+            The graph was loaded into our Postgres database from CSV data. We
+            used the Canvas API to render the map. This was very complex! I
+            connected the Canvas API with React for buttons and state. We
+            implemented various pathfinding algorithms like A* and
+            Dijkstra&apos;s, using the Strategy design pattern for clean code.
           </p>
         </div>
         <div>
@@ -126,7 +126,7 @@ export default function Page() {
             className="mb-8"
           />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            2. Service Requests
+            Service Requests
           </h3>
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
             We integrated jobs into the map. Staff can request services like
@@ -159,85 +159,112 @@ export default function Page() {
             working with authentication and databases and I learned a lot!
           </p>
         </div>
+
+        <div>
+          <Image
+            src="/hospital/ok-tommy-ai.png"
+            alt="voice AI assistant"
+            width={1894}
+            height={1011}
+            className="mb-8"
+          />
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+            More Features
+          </h3>
+          <div className="leading-loose text-neutral-600 dark:text-neutral-300">
+            We implemented many other features, including:
+            <ul className="list-disc list-inside pl-4">
+              <li>
+                View and edit tables for service requests, employees, map
+                nodes/edges
+              </li>
+              <li>
+                OAuth/Auth0 login for admin and staff. Admin add/edit staff.
+              </li>
+              <li>
+                Voice AI Assistant, &quot;Ok Tommy&quot; (our Scrum Master {"<"}3), to
+                interact with the map and pages using React Speech Kit
+              </li>
+              <li>AWS deployment</li>
+              <li>Scrolling announcements</li>
+              <li>
+                Realtime charts with Reaviz for service request completion
+                statistics
+              </li>
+              <li>CSV tables import/export</li>
+              <li>Various easter eggs...</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <Image
+            src="/hospital/figma-all.png"
+            alt="placeholder"
+            width={3248}
+            height={2112}
+          />
+          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold text-center lg:px-32">
+            Styling
+          </h3>
+          <p className="leading-loose text-neutral-600 dark:text-neutral-300 text-center lg:px-32">
+            Styling was a total mess! We struggled to coordinate across all 11
+            people, and none of us had prior Figma experience. But as we
+            progressed, we iterated on Figma mockups, helping create
+            consistency. I mentored an engineer who wanted to learn more about
+            CSS, and we renovated some pages. He went on to re-work much of our
+            team&apos;s CSS!
+          </p>
+        </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
           <div className="m-auto">
             <Image
-              src="/1920x1080.svg"
+              src="/hospital/responsiveness.png"
               alt="placeholder"
               width={1920}
-              height={1080}
+              height={1920}
             />
           </div>
           <div>
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-              todo...
+              Responsiveness
             </h3>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-              todo too...
+              We made our app responsive for different dimensions! This was
+              quite difficult due to busy UI on the map and having an
+              unconventional layout with a context menu.
             </p>
           </div>
         </div>
         <Image
-          src="1920x1080.svg"
+          src="/hospital/about.png"
           alt="placeholder"
           width={1920}
           height={1080}
         />
         <div className="text-center lg:px-32">
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            todo...
+            Team Dynamics
           </h3>
           <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            also todo...
+            todo...
           </p>
         </div>
         <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
-          <div className="m-auto">
-            <Image
-              src="1920x1080.svg"
-              alt="placeholder"
-              width={1920}
-              height={1080}
-              className="dark:hidden"
-            />
-            <Image
-              src="1920x1080.svg"
-              alt="placeholder"
-              width={1920}
-              height={1080}
-              className="hidden dark:inline-block"
-            />
-          </div>
+          <Image
+            src="/hospital/team-photo.jpeg"
+            alt="placeholder"
+            width={3462}
+            height={3072}
+            className="m-auto"
+          />
           <div>
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-              todo...
+              Learnings
             </h3>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-              todo too...
+              todo...
             </p>
           </div>
-        </div>
-        <Image
-          src="1920x1080.svg"
-          alt="placeholder"
-          width={1920}
-          height={1080}
-        />
-        <div className="text-center lg:px-32">
-          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            Impact
-          </h3>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            todo too...
-          </p>
-        </div>
-        <div className="lg:pr-64">
-          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            Learnings
-          </h3>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            todo...
-          </p>
         </div>
       </div>
       <div className="gradient-bg-100">
