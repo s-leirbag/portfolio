@@ -60,7 +60,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto gap-32 mb-32 flex flex-col">
+      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto gap-64 mb-32 flex flex-col">
         <Image
           src="/butcherbox/butcherbox-ss.png"
           alt="project thumbnail"
