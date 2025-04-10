@@ -244,7 +244,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               block.type === "imageAboveTextCenter" ? "text-center" : ""
             }
           >
-            {renderImageSet(block.imageSet)}
+            <div className="flex flex-row justify-center">{renderImageSet(block.imageSet)}</div>
             {block.heading && (
               <h3 className="text-2xl md:text-5xl mt-8 mb-2 rounded font-semibold">
                 {block.heading}

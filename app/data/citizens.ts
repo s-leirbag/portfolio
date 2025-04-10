@@ -222,7 +222,7 @@ const citizensProject: ProjectContent = {
         alt: "architecture",
         width: 800,
         height: 450,
-      },
+      },  
       heading: "Architecture",
       content: [
         {
