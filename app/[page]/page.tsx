@@ -5,9 +5,7 @@ import { redirect } from "next/navigation";
 export default async function DynamicPage({
   params,
 }: {
-  params: {
-    page: string;
-  };
+  params: Promise<{ page: string }>;
 }) {
   const { page } = await params;
 
