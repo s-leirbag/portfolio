@@ -1,6 +1,6 @@
 import { ProjectContent } from "../lib/content";
 
-const rubiksProject: ProjectContent = {
+const rubiks: ProjectContent = {
   title: "Rubik's Cube Trainer",
   blurb: "My first web project!",
   href: "/rubiks",
@@ -27,7 +27,7 @@ const rubiksProject: ProjectContent = {
     {
       type: "image",
       imageSet: {
-        src: "/oll-trainer/oll-trainer-ss.png",
+        src: "/rubiks/oll-trainer-ss.png",
         alt: "project thumbnail",
         width: 3248,
         height: 2112
@@ -67,7 +67,7 @@ const rubiksProject: ProjectContent = {
       type: "split",
       imageRight: false,
       imageSet: {
-        src: "/oll-trainer/oll-trainer-ss.png",
+        src: "/rubiks/oll-trainer-ss.png",
         alt: "project thumbnail",
         width: 3248,
         height: 2112
@@ -103,4 +103,4 @@ const rubiksProject: ProjectContent = {
   ]
 };
 
-export default rubiksProject;
+export default rubiks;

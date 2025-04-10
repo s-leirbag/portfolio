@@ -1,6 +1,6 @@
 import { ProjectContent } from "../lib/content";
 
-const hospitalProject: ProjectContent = {
+const hospital: ProjectContent = {
   title: "Brigham & Women's Hospital Application",
   blurb: "Leading an 11-person agile project.",
   href: "/hospital",
@@ -373,4 +373,4 @@ const hospitalProject: ProjectContent = {
   ],
 };
 
-export default hospitalProject;
+export default hospital;

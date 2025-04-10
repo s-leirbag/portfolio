@@ -1,6 +1,6 @@
 import { ProjectContent } from "../lib/content";
 
-const butcherboxProject: ProjectContent = {
+const butcherbox: ProjectContent = {
   title: "ButcherBox Internship",
   blurb: "My summer e-commerce internship.",
   href: "/butcherbox",
@@ -237,4 +237,4 @@ const butcherboxProject: ProjectContent = {
   ],
 };
 
-export default butcherboxProject;
+export default butcherbox;
