@@ -212,26 +212,27 @@ export default function Page() {
         </div>
         <div className="relative py-32">
           <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <div className="lg:pr-64">
-            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+          <div className="lg:pr-64 space-y-8">
+            <h3 className="text-2xl md:text-5xl -mb-6 rounded font-semibold">
               Learnings
             </h3>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
               I learned a ton about Contentful, Datadog, React Router,
               Storybook, and Jest. I dove deeper into the basics of Typescript,
               React, Git, and even Chrome Dev Tools for debugging.
-              <br />
-              <br />
+            </p>
+            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
               I was surprised how little time you spend actually writing code
               compared to reading code; having meetings; and writing tickets,
               PR&apos;s, and documentation. I loved practicing technical
               communication, planning for meetings, and presenting my work. I
               learned to break down PR&apos;s to make things easy for my team to
               review.
-              <br />
-              <br />I also learned a lot from pair-programming. I learned to
-              write pseudocode, to discern what rabbit holes to pursue or leave,
-              and to use test-driven development. I loved working in a real
+            </p>
+            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+              I also learned a lot from pair-programming. I learned to write
+              pseudocode, to discern what rabbit holes to pursue or leave, and
+              to use test-driven development. I loved working in a real
               engineering environment and growing my hard and soft skills. I
               have a long way to go!
             </p>
