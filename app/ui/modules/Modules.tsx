@@ -2,9 +2,16 @@ import { cn } from "@/app/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
+type TextList = {
+  description?: string;
+  items: string[];
+};
+
+type TextSection = string | TextList;
+
 type Snippet = {
   heading: string;
-  text: string[];
+  sections: TextSection[];
 };
 
 type ImageSet = {
@@ -26,14 +33,28 @@ const TextContent = ({
     <h3 className="text-2xl md:text-5xl -mb-6 rounded font-semibold">
       {snippet.heading}
     </h3>
-    {snippet.text.map((s, i) => (
-      <p
-        key={i}
-        className="leading-loose text-neutral-600 dark:text-neutral-300"
-      >
-        {s}
-      </p>
-    ))}
+    {snippet.sections.map((section, i) =>
+      typeof section === "string" ? (
+        <p
+          key={i}
+          className="leading-loose text-neutral-600 dark:text-neutral-300"
+        >
+          {section}
+        </p>
+      ) : (
+        <div
+          key={i}
+          className="leading-loose text-neutral-600 dark:text-neutral-300"
+        >
+          {section.description}
+          <ul className="list-disc list-inside pl-4">
+            {section.items.map((item, i) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )
+    )}
   </div>
 );
 
