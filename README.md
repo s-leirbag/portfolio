@@ -37,7 +37,6 @@
 
 ## Todo
 - Add other projects
-- Finish hospital project
 - Simplify responsiveness
 - Add animations
 - Email form

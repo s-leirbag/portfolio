@@ -17,7 +17,8 @@ const hospital: ProjectContent = {
       children: [
         {
           type: "text",
-          value: "I led a team of 11 students in WPI's CS-3733 Software Engineering course. We built a theoretical kiosk application for Brigham & Women's Hospital. I used my previous web skills to lead the team as an Assistant Lead Developer, mentoring younger engineers and guiding decisions. We simulated a modern software team, with front-end and back-end developers, a scrum master, PM, PO, and leads! I worked on all parts of the codebase but focused on the front-end.",
+          value:
+            "I led a team of 11 students in WPI's CS-3733 Software Engineering course. We built a theoretical kiosk application for Brigham & Women's Hospital. I used my previous web skills to lead the team as an Assistant Lead Developer, mentoring younger engineers and guiding decisions. We simulated a modern software team, with front-end and back-end developers, a scrum master, PM, PO, and leads! I worked on all parts of the codebase but focused on the front-end.",
         },
       ],
     },
@@ -35,7 +36,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "Hospital map navigation with a Voice AI assistant and on-the-go mobile directions",
+              value:
+                "Hospital map navigation with a Voice AI assistant and on-the-go mobile directions",
             },
           ],
         },
@@ -78,7 +80,14 @@ const hospital: ProjectContent = {
       ],
     },
   ],
-  stack: ["React", "Prisma/Postgres", "TypeScript", "Turborepo", "Docker", "AWS"],
+  stack: [
+    "React",
+    "Prisma/Postgres",
+    "TypeScript",
+    "Turborepo",
+    "Docker",
+    "AWS",
+  ],
   year: 2024,
   content: [
     {
@@ -99,7 +108,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "Hospitals need to run quickly and smoothly to save lives. But, they are extremely complex to manage. We architected a prototype hospital management app for Brigham & Women's Hospital. The app would theoretically run on kiosks placed throughout the hospital. It guides visitors through the huge building and helps employees request services and manage staff.",
+              value:
+                "Hospitals need to run quickly and smoothly to save lives. But, they are extremely complex to manage. We architected a prototype hospital management app for Brigham & Women's Hospital. The app would theoretically run on kiosks placed throughout the hospital. It guides visitors through the huge building and helps employees request services and manage staff.",
             },
           ],
         },
@@ -120,7 +130,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "Our app streamlined hospital navigation. It displays a map of each floor with interactive nodes for different rooms. Users can automatically generate optimized, visual paths between rooms. They also get a textual list of directions and can scan a QR code to take the directions on-the-go on their phone!",
+              value:
+                "Our app streamlined hospital navigation. It displays a map of each floor with interactive nodes for different rooms. Users can automatically generate optimized, visual paths between rooms. They also get a textual list of directions and can scan a QR code to take the directions on-the-go on their phone!",
             },
           ],
         },
@@ -129,7 +140,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "The graph was loaded into our Postgres database from CSV data. We used the Canvas API to render the map. This was very complex! I connected the Canvas API with React for buttons and state. We implemented various pathfinding algorithms like A* and Dijkstra's, using the Strategy design pattern for clean code.",
+              value:
+                "The graph was loaded into our Postgres database from CSV data. We used the Canvas API to render the map. This was very complex! I connected the Canvas API with React for buttons and state. We implemented various pathfinding algorithms like A* and Dijkstra's, using the Strategy design pattern for clean code.",
             },
           ],
         },
@@ -150,7 +162,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "We integrated jobs into the map. Staff can request services like sanitation, transport, and language interpretation to specific rooms. They can request specific employees and give details.",
+              value:
+                "We integrated jobs into the map. Staff can request services like sanitation, transport, and language interpretation to specific rooms. They can request specific employees and give details.",
             },
           ],
         },
@@ -171,7 +184,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "Employees can log into the kiosk using OAuth with Auth0. They can view their assigned service requests and mark them completed. Hospital admins can log in and view requests for all employees and filter accordingly.",
+              value:
+                "Employees can log into the kiosk using OAuth with Auth0. They can view their assigned service requests and mark them completed. Hospital admins can log in and view requests for all employees and filter accordingly.",
             },
           ],
         },
@@ -180,7 +194,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "I did a lot of the login management, showing the appropriate pages and information based on the employee. I paired with a newer teammate and mentored him to eventually flesh out the authentication features on his own! I also did a lot of the request displaying, filtering, and data management. This was my first big experience working with authentication and databases and I learned a lot!",
+              value:
+                "I did a lot of the login management, showing the appropriate pages and information based on the employee. I paired with a newer teammate and mentored him to eventually flesh out the authentication features on his own! I also did a lot of the request displaying, filtering, and data management. This was my first big experience working with authentication and databases and I learned a lot!",
             },
           ],
         },
@@ -210,7 +225,8 @@ const hospital: ProjectContent = {
               children: [
                 {
                   type: "text",
-                  value: "View and edit tables for service requests, employees, map nodes/edges",
+                  value:
+                    "View and edit tables for service requests, employees, map nodes/edges",
                 },
               ],
             },
@@ -219,7 +235,8 @@ const hospital: ProjectContent = {
               children: [
                 {
                   type: "text",
-                  value: "OAuth/Auth0 login for admin and staff. Admin add/edit staff.",
+                  value:
+                    "OAuth/Auth0 login for admin and staff. Admin add/edit staff.",
                 },
               ],
             },
@@ -228,7 +245,8 @@ const hospital: ProjectContent = {
               children: [
                 {
                   type: "text",
-                  value: "Voice AI Assistant, \"Ok Tommy\" (our Scrum Master <3), to interact with the map and pages using React Speech Kit",
+                  value:
+                    'Voice AI Assistant, "Ok Tommy" (our Scrum Master <3), to interact with the map and pages using React Speech Kit',
                 },
               ],
             },
@@ -255,7 +273,8 @@ const hospital: ProjectContent = {
               children: [
                 {
                   type: "text",
-                  value: "Realtime charts with Reaviz for service request completion statistics",
+                  value:
+                    "Realtime charts with Reaviz for service request completion statistics",
                 },
               ],
             },
@@ -296,7 +315,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "Styling was a total mess! We struggled to coordinate across all 11 people, and none of us had prior Figma experience. But as we progressed, we iterated on Figma mockups, helping create consistency. I mentored an engineer who wanted to learn more about CSS, and we renovated some pages. He went on to re-work much of our team's CSS!",
+              value:
+                "Styling was a total mess! We struggled to coordinate across all 11 people, and none of us had prior Figma experience. But as we progressed, we iterated on Figma mockups, helping create consistency. I mentored an engineer who wanted to learn more about CSS, and we renovated some pages. He went on to re-work much of our team's CSS!",
             },
           ],
         },
@@ -318,7 +338,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "We made our app responsive for different dimensions! This was quite difficult due to busy UI on the map and having an unconventional layout with a context menu.",
+              value:
+                "We made our app responsive for different dimensions! This was quite difficult due to busy UI on the map and having an unconventional layout with a context menu.",
             },
           ],
         },
@@ -335,14 +356,25 @@ const hospital: ProjectContent = {
     },
     {
       type: "textCenter",
-      heading: "Team Dynamics",
+      heading: "Leading is Hard",
       content: [
         {
           type: "paragraph",
           children: [
             {
               type: "text",
-              value: "todo...",
+              value:
+                "It was hard to move the team forward while also completing my own work. We worked 12-hour weeks to meet our weekly sprint goals. Practically all of our team were junior engineers, so my lead developer and I were usually swamped with helping others. I spent most meetings pairing, reviewing PR's, and dealing with merge conflicts. I'd stay late to help teammates, and then tackle bugs, refactoring, and leftover work on my own.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          children: [
+            {
+              type: "text",
+              value:
+                "I focused on developing talent by sharing React resources and guiding teammates to figure out problems for themselves. This often led to slower work completion, but paid off in the long run.",
             },
           ],
         },
@@ -364,7 +396,25 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "todo...",
+              value: "This was my first time working with a sizable team on a big project! I loved collaborating and mentoring. I learned that it's hard but important to coordinate across different developers.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          children: [
+            {
+              type: "text",
+              value: "I learned that conflict resolution is really hard. I had some disagreements and misunderstandings with teammates that I didn't initially know how to navigate. Our lead developer walked through conflicts with lots of grace and understanding, and I learned a lot from him.",
+            },
+          ],
+        },
+        {
+          type: "paragraph",
+          children: [
+            {
+              type: "text",
+              value: "This project was super fun and helped prepare me for future professional work!",
             },
           ],
         },
