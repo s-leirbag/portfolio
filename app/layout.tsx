@@ -50,8 +50,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased md:text-lg font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#e5e5e5_3px,transparent_3px)] dark:bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px]`}
       >
-        <div className="absolute w-24 md:w-32 p-4 md:p-8 gradient-bg-100">
-          <Link href={"/"}>
+        <div className="absolute w-24 md:w-32 p-4 md:p-8">
+          <div className="absolute inset-0 gradient-bg-100 blur-lg" />
+          <Link href={"/"} className="relative">
             <Image
               src="/logo-1-dot-fat-dark.png"
               alt="logo"
