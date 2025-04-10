@@ -91,34 +91,36 @@ export default function Page() {
             content designs.
           </p>
         </div>
-        <div className="relative py-32 lg:grid lg:grid-cols-2 gap-8 space-y-8">
+        <div className="relative py-32">
           <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <div className="m-auto">
-            <Image
-              src="/butcherbox/visualize.svg"
-              alt="Visualizing Content Templates"
-              width={1920}
-              height={1080}
-              className="dark:hidden"
-            />
-            <Image
-              src="/butcherbox/visualize-dark.svg"
-              alt="Visualizing Content Templates"
-              width={1920}
-              height={1080}
-              className="hidden dark:inline-block"
-            />
-          </div>
-          <div>
-            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-              Visualizing Content Templates
-            </h3>
-            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-              Our solution was to create a visual web tool. Authors would use it
-              to view all possible content configurations, filter for certain
-              characteristics, and easily see what configurations are possible
-              within our templates.
-            </p>
+          <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+            <div className="m-auto">
+              <Image
+                src="/butcherbox/visualize.svg"
+                alt="Visualizing Content Templates"
+                width={1920}
+                height={1080}
+                className="dark:hidden"
+              />
+              <Image
+                src="/butcherbox/visualize-dark.svg"
+                alt="Visualizing Content Templates"
+                width={1920}
+                height={1080}
+                className="hidden dark:inline-block"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+                Visualizing Content Templates
+              </h3>
+              <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+                Our solution was to create a visual web tool. Authors would use
+                it to view all possible content configurations, filter for
+                certain characteristics, and easily see what configurations are
+                possible within our templates.
+              </p>
+            </div>
           </div>
         </div>
         <div className="relative py-32">
@@ -130,55 +132,59 @@ export default function Page() {
             height={2112}
           />
         </div>
-        <div className="relative py-32 text-center lg:px-32">
+        <div className="relative py-32">
           <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            Development Process
-          </h3>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            We built this tool into an existing internal web app, extending its
-            features. I referenced Figma mockups to create new routes and lay
-            out the pages. One huge part of the project was generating all
-            possible content permutations from our templates. I paired with an
-            engineer and used test-driven development to cover all possible
-            content permutations and detailed nuances. This required me to spend
-            a ton of time in Contentful and gain a thorough understanding of our
-            content model.
-          </p>
-        </div>
-        <div className="relative py-32 lg:grid lg:grid-cols-2 gap-8 space-y-8">
-          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <div className="m-auto">
-            <Image
-              src="/butcherbox/filter.svg"
-              alt="filtering"
-              width={1920}
-              height={1080}
-              className="dark:hidden"
-            />
-            <Image
-              src="/butcherbox/filter-dark.svg"
-              alt="filtering"
-              width={1920}
-              height={1080}
-              className="hidden dark:inline-block"
-            />
-          </div>
-          <div>
+          <div className="text-center lg:px-32">
             <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-              Challenge: Filtering
+              Development Process
             </h3>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-              A key feature was letting content authors filter for possible
-              configurations, like having a background image and one heading. I
-              found that such a simple feature like filtering can actually be
-              hard to implement! You have to code the UI components, their
-              state, and then the actual filtering code. You have to create
-              clean, modular data structures to represent filter options, UI
-              state, and the filters to apply. This was a surprising challenge
-              but I really enjoyed working through it! I now have a greater
-              appreciation for filters.
+              We built this tool into an existing internal web app, extending
+              its features. I referenced Figma mockups to create new routes and
+              lay out the pages. One huge part of the project was generating all
+              possible content permutations from our templates. I paired with an
+              engineer and used test-driven development to cover all possible
+              content permutations and detailed nuances. This required me to
+              spend a ton of time in Contentful and gain a thorough
+              understanding of our content model.
             </p>
+          </div>
+        </div>
+        <div className="relative py-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+          <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+            <div className="m-auto">
+              <Image
+                src="/butcherbox/filter.svg"
+                alt="filtering"
+                width={1920}
+                height={1080}
+                className="dark:hidden"
+              />
+              <Image
+                src="/butcherbox/filter-dark.svg"
+                alt="filtering"
+                width={1920}
+                height={1080}
+                className="hidden dark:inline-block"
+              />
+            </div>
+            <div>
+              <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+                Challenge: Filtering
+              </h3>
+              <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+                A key feature was letting content authors filter for possible
+                configurations, like having a background image and one heading.
+                I found that such a simple feature like filtering can actually
+                be hard to implement! You have to code the UI components, their
+                state, and then the actual filtering code. You have to create
+                clean, modular data structures to represent filter options, UI
+                state, and the filters to apply. This was a surprising challenge
+                but I really enjoyed working through it! I now have a greater
+                appreciation for filters.
+              </p>
+            </div>
           </div>
         </div>
         <div className="relative py-32">
@@ -190,42 +196,46 @@ export default function Page() {
             height={2112}
           />
         </div>
-        <div className="relative py-32 text-center lg:px-32">
+        <div className="relative py-32">
           <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            Impact
-          </h3>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            While developing this tool, we demo&apos;d our progress in sprint
-            reviews and the tool began to be used even during development!
-            Overall, it helped content authors create great copywriting to help
-            get high-quality meat to customers!
-          </p>
+          <div className="text-center lg:px-32">
+            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+              Impact
+            </h3>
+            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+              While developing this tool, we demo&apos;d our progress in sprint
+              reviews and the tool began to be used even during development!
+              Overall, it helped content authors create great copywriting to
+              help get high-quality meat to customers!
+            </p>
+          </div>
         </div>
-        <div className="relative py-32 lg:pr-64">
+        <div className="relative py-32">
           <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-          <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
-            Learnings
-          </h3>
-          <p className="leading-loose text-neutral-600 dark:text-neutral-300">
-            I learned a ton about Contentful, Datadog, React Router, Storybook,
-            and Jest. I dove deeper into the basics of Typescript, React, Git,
-            and even Chrome Dev Tools for debugging.
-            <br />
-            <br />
-            I was surprised how little time you spend actually writing code
-            compared to reading code; having meetings; and writing tickets,
-            PR&apos;s, and documentation. I loved practicing technical
-            communication, planning for meetings, and presenting my work. I
-            learned to break down PR&apos;s to make things easy for my team to
-            review.
-            <br />
-            <br />I also learned a lot from pair-programming. I learned to write
-            pseudocode, to discern what rabbit holes to pursue or leave, and to
-            use test-driven development. I loved working in a real engineering
-            environment and growing my hard and soft skills. I have a long way
-            to go!
-          </p>
+          <div className="lg:pr-64">
+            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+              Learnings
+            </h3>
+            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+              I learned a ton about Contentful, Datadog, React Router,
+              Storybook, and Jest. I dove deeper into the basics of Typescript,
+              React, Git, and even Chrome Dev Tools for debugging.
+              <br />
+              <br />
+              I was surprised how little time you spend actually writing code
+              compared to reading code; having meetings; and writing tickets,
+              PR&apos;s, and documentation. I loved practicing technical
+              communication, planning for meetings, and presenting my work. I
+              learned to break down PR&apos;s to make things easy for my team to
+              review.
+              <br />
+              <br />I also learned a lot from pair-programming. I learned to
+              write pseudocode, to discern what rabbit holes to pursue or leave,
+              and to use test-driven development. I loved working in a real
+              engineering environment and growing my hard and soft skills. I
+              have a long way to go!
+            </p>
+          </div>
         </div>
       </div>
       <div className="relative">
