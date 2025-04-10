@@ -7,6 +7,7 @@
 ## 🚀 Features
 - Responsive design for all devices 📱💻
 - Dynamic project showcase 🎨
+- Internal content model 🧩
 - More to come 🔜
 
 ## 🛠️ Tech Stack
