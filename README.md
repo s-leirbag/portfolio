@@ -35,7 +35,9 @@
    ```
 
 ## Todo
-- Remove redundant CSS
-- Finish hospital project
 - Add other projects
+- Finish hospital project
 - Simplify responsiveness
+- Add animations
+- Email form
+- Remove redundant CSS
