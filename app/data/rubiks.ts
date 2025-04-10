@@ -1,12 +1,12 @@
 import { ProjectContent } from "../lib/content";
 
-const ollTrainerProject: ProjectContent = {
+const rubiksProject: ProjectContent = {
   title: "Rubik's Cube Trainer",
   blurb: "My first web project!",
-  href: "/oll-trainer",
+  href: "/rubiks",
   cta: "view project",
   image: {
-    src: "/oll-trainer/oll-trainer-ss.png",
+    src: "/rubiks/oll-trainer-ss.png",
     alt: "project thumbnail",
     width: 3248,
     height: 2112
@@ -103,4 +103,4 @@ const ollTrainerProject: ProjectContent = {
   ]
 };
 
-export default ollTrainerProject;
+export default rubiksProject;

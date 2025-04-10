@@ -37,4 +37,5 @@
 ## Todo
 - Remove redundant CSS
 - Finish hospital project
+- Add other projects
 - Simplify responsiveness
