@@ -35,6 +35,6 @@
    ```
 
 ## Todo
-- Get rid of horizontal scroll from `100vw` gradient
 - Remove redundant CSS
 - Finish hospital project
+- Simplify responsiveness

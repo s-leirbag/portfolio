@@ -171,7 +171,7 @@ export function renderImageSet(imageSet: ImageSet): React.ReactNode {
 // Function to render each block type
 function renderBlock(block: Block, index: number): React.ReactNode {
   const gradientBg = (
-    <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+    <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
   );
 
   switch (block.type) {
@@ -294,7 +294,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
 
       {/* Hero Section */}
       <div className="relative">
-        <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+        <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
         <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
           <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
             {project.title}
@@ -346,7 +346,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
       </div>
 
       <div className="relative">
-        <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+        <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
         <div className="px-4 sm:px-16 md:px-32">
           <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work

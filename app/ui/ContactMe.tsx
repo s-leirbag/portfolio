@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ContactMe() {
   return (
     <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
-      <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+      <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
       <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">Contact Me</h2>
       <p className="text-neutral-600 dark:text-neutral-300">
         You can find me on social media! Email form coming soon...
