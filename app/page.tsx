@@ -2,6 +2,7 @@ import Image from "next/image";
 import ScrollButton from "./ui/ScrollButton";
 import ContactMe from "./ui/ContactMe";
 import ProjectCard from "./ui/ProjectCard";
+import { projects } from "./data/projects";
 
 export default function Home() {
   return (
@@ -95,42 +96,16 @@ export default function Home() {
           </p>
         </div>
         <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
-          <ProjectCard
-            title="ButcherBox Internship"
-            desc="My summer e-commerce internship."
-            href="/butcherbox"
-            cta="read story"
-            imageSrc="/butcherbox/butcherbox-ss.png"
-            imageWidth={3248}
-            imageHeight={2112}
-          />
-          <ProjectCard
-            title="Citizens Bank Internship"
-            desc="My time as an intern at Citizens Bank."
-            href="/citizens"
-            cta="read story"
-            imageSrc="/citizens/citizens-ss.jpeg"
-            imageWidth={4096}
-            imageHeight={1777}
-          />
-          <ProjectCard
-            title="Brigham & Women's Hospital Application"
-            desc="Leading an 11-person agile project."
-            href="/hospital"
-            cta="view project"
-            imageSrc="/hospital/path.png"
-            imageWidth={1920}
-            imageHeight={1080}
-          />
-          <ProjectCard
-            title="Rubiks Cube Trainer"
-            desc="My first web project!"
-            href="/oll-trainer"
-            cta="view project"
-            imageSrc="/oll-trainer/oll-trainer-ss.png"
-            imageWidth={3248}
-            imageHeight={2112}
-          />
+          {projects.map((p, i) => (
+            <ProjectCard
+              key={i}
+              title={p.title}
+              blurb={p.blurb}
+              href={p.href}
+              cta={p.cta}
+              imageSet={p.image}
+            />
+          ))}
         </div>
       </div>
       <ContactMe />

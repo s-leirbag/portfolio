@@ -7,7 +7,7 @@ const ollTrainerProject: ProjectContent = {
   cta: "view project",
   image: {
     src: "/oll-trainer/oll-trainer-ss.png",
-    alt: "Rubik's Cube Trainer screenshot",
+    alt: "project thumbnail",
     width: 3248,
     height: 2112
   },

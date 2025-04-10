@@ -21,7 +21,7 @@ type InlineNode =
   | { type: "text"; value: string }
   | { type: "link"; href: string; value: string };
 
-type ImageSet = {
+export type ImageSet = {
   src: string;
   srcDark?: string;
   alt: string;
@@ -136,7 +136,7 @@ function renderRichTextNode(
 }
 
 // Function to render image sets
-function renderImageSet(imageSet: ImageSet): React.ReactNode {
+export function renderImageSet(imageSet: ImageSet): React.ReactNode {
   if (imageSet.srcDark) {
     return (
       <>
@@ -362,15 +362,14 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
               (projectContent) => projectContent.title !== project.title
             ),
             2
-          ).map((p) => (
+          ).map((p, i) => (
             <ProjectCard
+              key={i}
               title={p.title}
-              desc={p.blurb}
+              blurb={p.blurb}
               href={p.href}
               cta={p.cta}
-              imageSrc={p.image.src}
-              imageWidth={p.image.width}
-              imageHeight={p.image.height}
+              imageSet={p.image}
             />
           ))}
         </div>
