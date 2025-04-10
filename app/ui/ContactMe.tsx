@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ContactMe() {
   return (
-    <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:p-16 mx-auto flex flex-col justify-center min-h-screen gap-2">
-      <div className="absolute inset-0 -mx-20 -z-10 gradient-bg-100 blur-3xl" />
+    <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
+      <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
       <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">Contact Me</h2>
       <p className="text-neutral-600 dark:text-neutral-300">
         You can find me on social media! Email form coming soon...

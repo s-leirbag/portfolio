@@ -5,9 +5,11 @@ import ProjectCard from "../ui/ProjectCard";
 
 export default function Page() {
   return (
-    <div className="gradient-bg-100">
-      <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto pt-[calc(25vh)] gap-8 flex flex-col">
+    <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
+      <div className="absolute inset-0 -z-10 gradient-bg blur-xl" />
+      <div className="relative">
+        <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+        <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
           <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
             ButcherBox Internship
           </h1>
@@ -60,15 +62,19 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] py-16 px-4 md:px-16 mx-auto gap-64 mb-32 flex flex-col">
-        <Image
-          src="/butcherbox/butcherbox-ss.png"
-          alt="project thumbnail"
-          width={3248}
-          height={2112}
-          priority
-        />
-        <div>
+      <div className="px-4 md:px-16 flex flex-col">
+        <div className="relative py-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+          <Image
+            src="/butcherbox/butcherbox-ss.png"
+            alt="project thumbnail"
+            width={3248}
+            height={2112}
+            priority
+          />
+        </div>
+        <div className="relative py-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Main Project
           </h3>
@@ -85,7 +91,8 @@ export default function Page() {
             content designs.
           </p>
         </div>
-        <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+        <div className="relative py-32 lg:grid lg:grid-cols-2 gap-8 space-y-8">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <div className="m-auto">
             <Image
               src="/butcherbox/visualize.svg"
@@ -114,13 +121,17 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <Image
-          src="/butcherbox/whats-in-the-box.png"
-          alt="what's in the box"
-          width={3248}
-          height={2112}
-        />
-        <div className="text-center lg:px-32">
+        <div className="relative py-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+          <Image
+            src="/butcherbox/whats-in-the-box.png"
+            alt="what's in the box"
+            width={3248}
+            height={2112}
+          />
+        </div>
+        <div className="relative py-32 text-center lg:px-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Development Process
           </h3>
@@ -135,7 +146,8 @@ export default function Page() {
             content model.
           </p>
         </div>
-        <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8">
+        <div className="relative py-32 lg:grid lg:grid-cols-2 gap-8 space-y-8">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <div className="m-auto">
             <Image
               src="/butcherbox/filter.svg"
@@ -169,13 +181,17 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <Image
-          src="/butcherbox/fish-smooch.png"
-          alt="fish smooch"
-          width={3248}
-          height={2112}
-        />
-        <div className="text-center lg:px-32">
+        <div className="relative py-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+          <Image
+            src="/butcherbox/fish-smooch.png"
+            alt="fish smooch"
+            width={3248}
+            height={2112}
+          />
+        </div>
+        <div className="relative py-32 text-center lg:px-32">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Impact
           </h3>
@@ -186,7 +202,8 @@ export default function Page() {
             get high-quality meat to customers!
           </p>
         </div>
-        <div className="lg:pr-64">
+        <div className="relative py-32 lg:pr-64">
+          <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
           <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
             Learnings
           </h3>
@@ -211,8 +228,9 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="gradient-bg-100">
-        <div className="w-full sm:w-[640px] lg:w-[768px] px-4 sm:px-16 m-auto">
+      <div className="relative">
+        <div className="absolute inset-y-0 w-screen left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
+        <div className="px-4 sm:px-16 md:px-32">
           <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
@@ -221,7 +239,7 @@ export default function Page() {
             projects.
           </p>
         </div>
-        <div className="w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] pt-8 pb-16 px-4 md:p-16 mx-auto grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
+        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
           <ProjectCard
             title="Citizens Bank Internship"
             desc="My time as an intern at Citizens Bank."

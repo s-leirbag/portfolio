@@ -21,36 +21,41 @@ body {
 }
 
 @layer utilities {
-  .gradient-bg-100 {
-    background: radial-gradient(ellipse, white, white, transparent 100%);
-    /* background: radial-gradient(ellipse, orange, orange, transparent 100%); */
-    /* background: radial-gradient(ellipse, orange 0%, transparent 100%); */
+  .gradient-bg {
+    background: radial-gradient(ellipse, white, transparent);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .gradient-bg-100 {
-      background: radial-gradient(ellipse, black, black, transparent 100%);
-      /* background: radial-gradient(ellipse, black 0%, transparent 100%); */
-    }
+  .gradient-bg-thick {
+    background: radial-gradient(ellipse, white 20%, transparent);
   }
 
   .text-shadow-50px {
-    text-shadow: "0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white";
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .text-shadow-50px {
-      text-shadow: "0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black";
-    }
+    text-shadow: 0 0 50px white, 0 0 50px white, 0 0 50px white, 0 0 50px white,
+      0 0 50px white, 0 0 50px white, 0 0 50px white;
   }
 
   .text-shadow-20px {
-    text-shadow: "0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white";
+    text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white, 0 0 20px white,
+      0 0 20px white, 0 0 20px white, 0 0 20px white;
   }
 
   @media (prefers-color-scheme: dark) {
+    .gradient-bg {
+      background: radial-gradient(ellipse, black, transparent);
+    }
+
+    .gradient-bg-thick {
+      background: radial-gradient(ellipse, black 20%, transparent);
+    }
+
+    .text-shadow-50px {
+      text-shadow: 0 0 50px black, 0 0 50px black, 0 0 50px black,
+        0 0 50px black, 0 0 50px black, 0 0 50px black, 0 0 50px black;
+    }
+
     .text-shadow-20px {
-      text-shadow: "0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black";
+      text-shadow: 0 0 20px black, 0 0 20px black, 0 0 20px black,
+        0 0 20px black, 0 0 20px black, 0 0 20px black, 0 0 20px black;
     }
   }
 }
