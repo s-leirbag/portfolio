@@ -1,6 +1,6 @@
 import { ProjectContent } from "../lib/content";
 
-const citizensBankProject: ProjectContent = {
+const citizensProject: ProjectContent = {
   title: "Citizens Bank Internship",
   blurb: "My time as an intern at Citizens Bank.",
   href: "/citizens",
@@ -359,4 +359,4 @@ const citizensBankProject: ProjectContent = {
   ],
 };
 
-export default citizensBankProject;
+export default citizensProject;

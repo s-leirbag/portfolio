@@ -60,6 +60,8 @@ export type ProjectContent = {
   description: RichTextNode[];
   stack: string[];
   year: number;
+  link?: string;
+  linkCTA?: string;
   content: Block[];
 };
 
@@ -319,6 +321,19 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
                 {project.year}
               </p>
             </div>
+            {project.link && project.linkCTA && (
+              <div className="space-y-2">
+                <strong>Link</strong>
+                <Link
+                  href={project.link}
+                  className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4 sm:px-5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {project.linkCTA} {"->"}
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
