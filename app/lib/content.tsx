@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import ProjectCard from "../ui/ProjectCard";
 import ContactMe from "../ui/ContactMe";
+import { projects } from "../data/projects";
+import { sampleN } from "./utils";
 
 export type RichTextNode =
   | {
@@ -355,24 +357,22 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
           </p>
         </div>
         <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
-          <ProjectCard
-            title="Citizens Bank Internship"
-            desc="My time as an intern at Citizens Bank."
-            href="/citizens"
-            cta="read story"
-            imageSrc="/citizens/citizens-ss.jpeg"
-            imageWidth={4096}
-            imageHeight={1777}
-          />
-          <ProjectCard
-            title="Brigham & Women's Hospital Application"
-            desc="Leading an 11-person agile project."
-            href="/hospital"
-            cta="view project"
-            imageSrc="/hospital/path.png"
-            imageWidth={1920}
-            imageHeight={1080}
-          />
+          {sampleN(
+            projects.filter(
+              (projectContent) => projectContent.title !== project.title
+            ),
+            2
+          ).map((p) => (
+            <ProjectCard
+              title={p.title}
+              desc={p.blurb}
+              href={p.href}
+              cta={p.cta}
+              imageSrc={p.image.src}
+              imageWidth={p.image.width}
+              imageHeight={p.image.height}
+            />
+          ))}
         </div>
       </div>
       <ContactMe />

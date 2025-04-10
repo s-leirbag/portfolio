@@ -2,8 +2,8 @@ import { ProjectContent } from "../lib/content";
 
 const ollTrainerProject: ProjectContent = {
   title: "Rubik's Cube Trainer",
-  blurb: "A training application for Rubik's Cube algorithms",
-  href: "/rubiks-cube",
+  blurb: "My first web project!",
+  href: "/oll-trainer",
   cta: "view project",
   image: {
     src: "/oll-trainer/oll-trainer-ss.png",
