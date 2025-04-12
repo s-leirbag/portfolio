@@ -4,7 +4,7 @@ export default function ContactMe() {
   return (
     <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
       <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-      <h2 className="text-3xl md:text-6xl py-0.5 font-semibold">Contact Me</h2>
+      <h2 className="text-5xl lg:text-6xl py-0.5 font-semibold">Contact Me</h2>
       <p className="text-neutral-600 dark:text-neutral-300">
         You can find me on social media! Email form coming soon...
       </p>
@@ -57,7 +57,7 @@ export default function ContactMe() {
       </div>
       <Link
         href={"https://github.com/s-leirbag/portfolio"}
-        className="w-full absolute left-0 bottom-0 block p-8 sm:text-xl text-center hover:underline text-sky-500"
+        className="w-full absolute left-0 bottom-0 block p-8 text-center hover:underline text-sky-500"
       >
         https://github.com/s-leirbag/portfolio
       </Link>

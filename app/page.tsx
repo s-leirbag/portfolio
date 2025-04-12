@@ -6,7 +6,7 @@ import { projects } from "./data/projects";
 
 export default function Home() {
   return (
-    <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
+    <div className="relative w-full lg:w-[1024px] m-auto">
       <div className="absolute inset-0 -z-10 gradient-bg blur-xl" />
       <div className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
         <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
@@ -20,7 +20,7 @@ export default function Home() {
             priority
           />
           <div className="flex-1 flex flex-col gap-2">
-            <h1 className="text-5xl md:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
               Gabriel Shiu
             </h1>
             <p className="text-neutral-600 dark:text-neutral-300">
@@ -86,8 +86,8 @@ export default function Home() {
       </div>
       <div className="relative">
         <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-        <div className="px-4 sm:px-16 md:px-32">
-          <h2 className="text-3xl md:text-6xl py-0.5 pt-16 font-semibold text-shadow-50px">
+        <div className="px-4 md:px-32">
+          <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold text-shadow-50px">
             Work
           </h2>
           <p className="text-shadow-20px text-neutral-600 dark:text-neutral-300">
@@ -95,7 +95,7 @@ export default function Home() {
             projects.
           </p>
         </div>
-        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
+        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
           {projects.map((p, i) => (
             <ProjectCard
               key={i}

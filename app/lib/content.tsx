@@ -187,8 +187,8 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           {gradientBg}
-          <div className="lg:pr-8">
-            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+          <div>
+            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -204,8 +204,8 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           {gradientBg}
-          <div className="text-center lg:px-32">
-            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+          <div className="text-center md:px-16 lg:px-32">
+            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -221,8 +221,8 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           {gradientBg}
-          <div className="lg:pr-64">
-            <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+          <div className="md:pr-32 lg:pr-64">
+            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -244,9 +244,11 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               block.type === "imageAboveTextCenter" ? "text-center" : ""
             }
           >
-            <div className="flex flex-row justify-center">{renderImageSet(block.imageSet)}</div>
+            <div className="flex flex-row justify-center">
+              {renderImageSet(block.imageSet)}
+            </div>
             {block.heading && (
-              <h3 className="text-2xl md:text-5xl mt-8 mb-2 rounded font-semibold">
+              <h3 className="text-4xl lg:text-5xl mt-8 mb-2 rounded font-semibold">
                 {block.heading}
               </h3>
             )}
@@ -265,10 +267,10 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           {gradientBg}
-          <div className="lg:grid lg:grid-cols-2 gap-8 space-y-8 lg:space-y-0">
+          <div className="md:grid md:grid-cols-2 gap-8 space-y-8 md:space-y-0">
             <div className="m-auto">{renderImageSet(block.imageSet)}</div>
             <div className={block.imageRight ? "col-start-1 row-start-1" : ""}>
-              <h3 className="text-2xl md:text-5xl mb-2 rounded font-semibold">
+              <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
                 {block.heading}
               </h3>
               <div className="space-y-8">
@@ -289,14 +291,14 @@ function renderBlock(block: Block, index: number): React.ReactNode {
 // Main component to render the entire project
 export function ProjectPage({ project }: { project: ProjectContent }) {
   return (
-    <div className="relative w-full sm:w-[640px] md:w-[768px] lg:w-[1024px] m-auto">
+    <div className="relative w-full lg:w-[1024px] m-auto">
       <div className="absolute inset-0 -z-10 gradient-bg blur-xl" />
 
       {/* Hero Section */}
       <div className="relative">
         <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
         <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
-          <h1 className="text-5xl md:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
             {project.title}
           </h1>
           <div className="space-y-8">
@@ -305,7 +307,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
             )}
           </div>
 
-          <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] gap-2 gap-y-8 max-w-lg">
+          <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-2 gap-y-8 max-w-lg">
             <div className="space-y-2">
               <strong>Stack</strong>
               {project.stack.map((item, index) => (
@@ -328,7 +330,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
                 <strong>Link</strong>
                 <Link
                   href={project.link}
-                  className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4 sm:px-5"
+                  className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -347,8 +349,8 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
 
       <div className="relative">
         <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-        <div className="px-4 sm:px-16 md:px-32">
-          <h2 className="text-3xl md:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
+        <div className="px-4 md:px-32">
+          <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
             Other Work
           </h2>
           <p className="text-shadow-20px leading-loose text-neutral-600 dark:text-neutral-300">
@@ -356,7 +358,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
             projects.
           </p>
         </div>
-        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-8">
+        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
           {sampleN(
             projects.filter(
               (projectContent) => projectContent.title !== project.title
