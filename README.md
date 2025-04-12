@@ -36,8 +36,8 @@
    ```
 
 ## Todo
+- Fix dots on mobile
 - Add other projects
-- Simplify responsiveness
 - Add animations
 - Email form
 - Remove redundant CSS

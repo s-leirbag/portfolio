@@ -23,7 +23,7 @@ export default function Home() {
             <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
               Gabriel Shiu
             </h1>
-            <p className="text-neutral-600 dark:text-neutral-300">
+            <p className="leading-relaxed text-neutral-600 dark:text-neutral-300">
               I&apos;m a lifelong learner and teacher, passionate about growing
               as a software engineer and helping my peers along the way!
               <br />
