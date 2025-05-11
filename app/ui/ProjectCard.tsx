@@ -39,7 +39,7 @@ export default function ProjectCard({
     >
       <div className="absolute -z-10 inset-0 rounded-xl pointer-events-none bg-neutral-100 dark:bg-neutral-800" />
       <div
-        className="absolute -z-10 inset-0 rounded-xl pointer-events-none opacity-0 group-hover:opacity-50 transition-opacity duration-500 from-neutral-200 to-neutral-100 dark:from-neutral-700 dark:to-neutral-800"
+        className="absolute -z-10 inset-0 rounded-xl pointer-events-none opacity-0 group-hover:opacity-50 transition-opacity duration-500 from-neutral-100 to-neutral-200 dark:from-neutral-700 dark:to-neutral-800"
         style={{
           background: `radial-gradient(circle at ${position.x}px ${position.y}px, var(--tw-gradient-stops))`,
         }}
