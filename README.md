@@ -36,7 +36,8 @@
    ```
 
 ## Todo
-- Fix dots on mobile
+- Move to Tailwind `container` utility
+- Fix dots on mobile and textures in general
 - Add other projects
 - Add animations
 - Email form
