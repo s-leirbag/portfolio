@@ -49,10 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-lg lg:text-xl font-[family-name:var(--font-geist-sans)] bg-[radial-gradient(#e5e5e5_3px,transparent_3px)] dark:bg-[radial-gradient(#262626_3px,transparent_3px)] [background-size:36px_36px] transition-all duration-200`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-lg lg:text-xl font-[family-name:var(--font-geist-sans)] transition-all duration-200`}
       >
-        <div className="absolute w-24 md:w-32 p-4 md:p-8">
-          <div className="absolute inset-0 gradient-bg-thick blur-lg" />
+        {children}
+        <Analytics />
+        <SpeedInsights />
+        <div className="absolute top-0 left-0 w-24 md:w-32 p-4 md:p-8">
           <Link href={"/"} className="relative">
             <Image
               src="/logo-1-dot-fat-dark.png"
@@ -70,9 +72,6 @@ export default function RootLayout({
             />
           </Link>
         </div>
-        {children}
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   );

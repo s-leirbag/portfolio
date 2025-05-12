@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import ProjectCard from "../ui/ProjectCard";
-import ContactMe from "../ui/ContactMe";
 import { projects } from "../data/projects";
+import ContactMe from "../ui/ContactMe";
+import ProjectCard from "../ui/ProjectCard";
 import { sampleN } from "./utils";
 
 export type RichTextNode =
@@ -170,15 +170,10 @@ export function renderImageSet(imageSet: ImageSet): React.ReactNode {
 
 // Function to render each block type
 function renderBlock(block: Block, index: number): React.ReactNode {
-  const gradientBg = (
-    <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-  );
-
   switch (block.type) {
     case "image":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           {renderImageSet(block.imageSet)}
         </div>
       );
@@ -186,7 +181,6 @@ function renderBlock(block: Block, index: number): React.ReactNode {
     case "textLeft":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           <div>
             <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
@@ -203,7 +197,6 @@ function renderBlock(block: Block, index: number): React.ReactNode {
     case "textCenter":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           <div className="text-center md:px-16 lg:px-32">
             <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
@@ -220,7 +213,6 @@ function renderBlock(block: Block, index: number): React.ReactNode {
     case "textRightPadding":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           <div className="md:pr-32 lg:pr-64">
             <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
               {block.heading}
@@ -238,7 +230,6 @@ function renderBlock(block: Block, index: number): React.ReactNode {
     case "imageAboveTextCenter":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           <div
             className={
               block.type === "imageAboveTextCenter" ? "text-center" : ""
@@ -266,7 +257,6 @@ function renderBlock(block: Block, index: number): React.ReactNode {
     case "split":
       return (
         <div key={index} className="relative py-32">
-          {gradientBg}
           <div className="md:grid md:grid-cols-2 gap-8 space-y-8 md:space-y-0">
             <div className="m-auto">{renderImageSet(block.imageSet)}</div>
             <div className={block.imageRight ? "col-start-1 row-start-1" : ""}>
@@ -291,92 +281,90 @@ function renderBlock(block: Block, index: number): React.ReactNode {
 // Main component to render the entire project
 export function ProjectPage({ project }: { project: ProjectContent }) {
   return (
-    <div className="relative w-full lg:w-[1024px] m-auto">
-      <div className="absolute inset-0 -z-10 gradient-bg blur-xl" />
-
-      {/* Hero Section */}
-      <div className="relative">
-        <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-        <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
-            {project.title}
-          </h1>
-          <div className="space-y-8">
-            {project.description.map((node, index) =>
-              renderRichTextNode(node, index)
-            )}
-          </div>
-
-          <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-2 gap-y-8 max-w-lg">
-            <div className="space-y-2">
-              <strong>Stack</strong>
-              {project.stack.map((item, index) => (
-                <p
-                  key={index}
-                  className="text-neutral-600 dark:text-neutral-300"
-                >
-                  {item}
-                </p>
-              ))}
+    <div className="relative w-full overflow-hidden">
+      <div className="w-full lg:max-w-[1280px] m-auto">
+        {/* Hero Section */}
+        <div className="relative">
+          <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+              {project.title}
+            </h1>
+            <div className="space-y-8">
+              {project.description.map((node, index) =>
+                renderRichTextNode(node, index)
+              )}
             </div>
-            <div className="space-y-2">
-              <strong>Year</strong>
-              <p className="text-neutral-600 dark:text-neutral-300">
-                {project.year}
-              </p>
-            </div>
-            {project.link && project.linkCTA && (
+
+            <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-2 gap-y-8 max-w-lg">
               <div className="space-y-2">
-                <strong>Link</strong>
-                <Link
-                  href={project.link}
-                  className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.linkCTA} {"->"}
-                </Link>
+                <strong>Stack</strong>
+                {project.stack.map((item, index) => (
+                  <p
+                    key={index}
+                    className="text-neutral-600 dark:text-neutral-300"
+                  >
+                    {item}
+                  </p>
+                ))}
               </div>
-            )}
+              <div className="space-y-2">
+                <strong>Year</strong>
+                <p className="text-neutral-600 dark:text-neutral-300">
+                  {project.year}
+                </p>
+              </div>
+              {project.link && project.linkCTA && (
+                <div className="space-y-2">
+                  <strong>Link</strong>
+                  <Link
+                    href={project.link}
+                    className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.linkCTA} {"->"}
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Main Content */}
-      <div className="px-4 md:px-16 flex flex-col">
-        {project.content.map((block, index) => renderBlock(block, index))}
-      </div>
+        {/* Main Content */}
+        <div className="px-4 md:px-16 flex flex-col">
+          {project.content.map((block, index) => renderBlock(block, index))}
+        </div>
 
-      <div className="relative">
-        <div className="absolute inset-y-0 w-[calc(100vw-2rem)] left-1/2 -translate-x-1/2 -z-10 gradient-bg-thick blur-xl" />
-        <div className="px-4 md:px-32">
-          <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 rounded font-semibold text-shadow-50px">
-            Other Work
-          </h2>
-          <p className="text-shadow-20px leading-loose text-neutral-600 dark:text-neutral-300">
-            I learn by doing! Take a look at some of my past and ongoing
-            projects.
-          </p>
+        <div className="relative">
+          <div className="px-4 md:mx-auto max-w-2xl">
+            <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 rounded font-semibold">
+              Other Work
+            </h2>
+            <p className="leading-loose text-neutral-600 dark:text-neutral-300">
+              I learn by doing! Take a look at some of my past and ongoing
+              projects.
+            </p>
+          </div>
+          <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
+            {sampleN(
+              projects.filter(
+                (projectContent) => projectContent.title !== project.title
+              ),
+              2
+            ).map((p, i) => (
+              <ProjectCard
+                key={i}
+                title={p.title}
+                blurb={p.blurb}
+                href={p.href}
+                cta={p.cta}
+                imageSet={p.image}
+              />
+            ))}
+          </div>
         </div>
-        <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
-          {sampleN(
-            projects.filter(
-              (projectContent) => projectContent.title !== project.title
-            ),
-            2
-          ).map((p, i) => (
-            <ProjectCard
-              key={i}
-              title={p.title}
-              blurb={p.blurb}
-              href={p.href}
-              cta={p.cta}
-              imageSet={p.image}
-            />
-          ))}
-        </div>
+        <ContactMe />
       </div>
-      <ContactMe />
     </div>
   );
 }

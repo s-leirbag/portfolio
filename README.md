@@ -5,12 +5,14 @@
 [![Screenshot](public/ss.png)](https://www.gabrielshiu.com/)
 
 ## 🚀 Features
+
 - Responsive design for all devices 📱💻
 - Dynamic project showcase 🎨
 - Internal content model 🧩
 - More to come 🔜
 
 ## 🛠️ Tech Stack
+
 - React
 - Next.js
 - TypeScript
@@ -18,6 +20,7 @@
 - Vercel
 
 ## ⚙️ Setup & Installation
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/s-leirbag/portfolio.git
@@ -36,9 +39,9 @@
    ```
 
 ## Todo
-- Move to Tailwind `container` utility
-- Fix dots on mobile and textures in general
+
 - Add other projects
+- Add textures to project pages
 - Add animations
 - Email form
 - Remove redundant CSS
