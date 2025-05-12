@@ -20,7 +20,7 @@ export default function Home() {
     <div className="relative w-full overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
         <div className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
-          <div className="absolute inset-0 -z-10 translate-x-[25vw] translate-y-[40vh] opacity-10">
+          <div className="absolute inset-0 -z-20 translate-x-[25vw] translate-y-[40vh] opacity-10">
             <SvgCollage
               count={10}
               size={128}
@@ -33,7 +33,7 @@ export default function Home() {
               ]}
             />
           </div>
-          <div className="absolute inset-0 -z-10 bg-texture-dots" />
+          <div className="absolute inset-0 -z-20 bg-texture-dots" />
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
@@ -110,7 +110,7 @@ export default function Home() {
           <ScrollButton />
         </div>
         <div className="relative">
-          <div className="absolute inset-0 -z-10 -translate-x-[40vw] translate-y-[5vh] transition-opacity duration-300 opacity-0 lg:opacity-10 ">
+          <div className="absolute inset-0 -z-20 -translate-x-[40vw] translate-y-[5vh] transition-opacity duration-300 opacity-0 lg:opacity-10 ">
             <SvgCollage
               count={15}
               size={128}

@@ -5,7 +5,7 @@ import SvgCollage from "../SvgCollage";
 export default function ContactMe() {
   return (
     <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
-      <div className="absolute inset-0 -z-10 translate-x-[30vw] -translate-y-[10vh] opacity-10">
+      <div className="absolute inset-0 -z-20 translate-x-[30vw] -translate-y-[10vh] opacity-10">
         <SvgCollage
           count={10}
           size={128}
