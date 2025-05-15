@@ -25,7 +25,6 @@ export default function Home() {
             y={"40vh"}
             count={10}
             size={128}
-            className="w-full h-full"
             svgs={[
               <Cpu size={128} key="cpu" />,
               <Binary size={128} key="binary" />,
@@ -115,7 +114,6 @@ export default function Home() {
             y={"5vh"}
             count={15}
             size={128}
-            className="w-full h-full"
             svgs={[
               <Cog size={128} key="cog" />,
               <Wrench size={128} key="wrench" />,

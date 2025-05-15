@@ -3,11 +3,10 @@ type Props = {
   y: string;
   count: number;
   size: number;
-  className?: string;
   svgs: React.ReactNode[];
 };
 
-const SvgCollage = ({ x, y, count, size, className = "", svgs }: Props) => {
+const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
   type Icon = {
     x: number;
     y: number;
@@ -82,29 +81,30 @@ const SvgCollage = ({ x, y, count, size, className = "", svgs }: Props) => {
   const positions = generateClusteredIcons(count, (size / 2) * 1.1);
 
   return (
-    <div className={`absolute inset-0 -z-20 translate-x-[${x}] translate-y-[${y}] opacity-10`}>
-      <div className={`${className}`} aria-hidden="true">
-        {positions.map(({ x, y }, i) => {
-          const angle = Math.random() * 360;
+    <div
+      className={`absolute inset-0 -z-20 translate-x-[${x}] translate-y-[${y}] opacity-10`}
+      aria-hidden="true"
+    >
+      {positions.map(({ x, y }, i) => {
+        const angle = Math.random() * 360;
 
-          return (
-            <div
-              key={i}
-              className="absolute"
-              style={{
-                left: `calc(50% + ${x}px)`,
-                top: `calc(50% + ${y}px)`,
-                transform: `translate(-50%, -50%) rotate(${angle}deg)`,
-                width: `${size}px`,
-                height: `${size}px`,
-                opacity: 0.6,
-              }}
-            >
-              {svgs[Math.floor(Math.random() * svgs.length)]}
-            </div>
-          );
-        })}
-      </div>
+        return (
+          <div
+            key={i}
+            className="absolute"
+            style={{
+              left: `calc(50% + ${x}px)`,
+              top: `calc(50% + ${y}px)`,
+              transform: `translate(-50%, -50%) rotate(${angle}deg)`,
+              width: `${size}px`,
+              height: `${size}px`,
+              opacity: 0.6,
+            }}
+          >
+            {svgs[Math.floor(Math.random() * svgs.length)]}
+          </div>
+        );
+      })}
     </div>
   );
 };

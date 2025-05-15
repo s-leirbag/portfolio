@@ -10,7 +10,6 @@ export default function ContactMe() {
         y={"-10vh"}
         count={10}
         size={128}
-        className="w-full h-full"
         svgs={[
           <User size={128} key="user" />,
           <AtSign size={128} key="atsign" />,
