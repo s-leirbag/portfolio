@@ -281,7 +281,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
 // Main component to render the entire project
 export function ProjectPage({ project }: { project: ProjectContent }) {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
         {/* Hero Section */}
         <div className="relative">

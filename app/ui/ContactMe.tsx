@@ -5,19 +5,19 @@ import SvgCollage from "../SvgCollage";
 export default function ContactMe() {
   return (
     <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
-      <div className="absolute inset-0 -z-20 translate-x-[30vw] -translate-y-[10vh] opacity-10">
-        <SvgCollage
-          count={10}
-          size={128}
-          className="w-full h-full"
-          svgs={[
-            <User size={128} key="user" />,
-            <AtSign size={128} key="atsign" />,
-            <Mail size={128} key="mail" />,
-            <MessageCircleHeart size={128} key="messagecircleheart" />,
-          ]}
-        />
-      </div>
+      <SvgCollage
+        x={"30vw"}
+        y={"-10vh"}
+        count={10}
+        size={128}
+        className="w-full h-full"
+        svgs={[
+          <User size={128} key="user" />,
+          <AtSign size={128} key="atsign" />,
+          <Mail size={128} key="mail" />,
+          <MessageCircleHeart size={128} key="messagecircleheart" />,
+        ]}
+      />
       <h2 className="text-5xl lg:text-6xl py-0.5 font-semibold">Contact Me</h2>
       <p className="text-neutral-600 dark:text-neutral-300">
         You can find me on social media! Email form coming soon...

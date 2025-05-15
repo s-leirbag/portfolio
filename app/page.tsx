@@ -17,22 +17,22 @@ import ScrollButton from "./ui/ScrollButton";
 
 export default function Home() {
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
         <div className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
-          <div className="absolute inset-0 -z-20 translate-x-[25vw] translate-y-[40vh] opacity-10">
-            <SvgCollage
-              count={10}
-              size={128}
-              className="w-full h-full"
-              svgs={[
-                <Cpu size={128} key="cpu" />,
-                <Binary size={128} key="binary" />,
-                <Laptop size={128} key="laptop" />,
-                <SquareTerminal size={128} key="squareterminal" />,
-              ]}
-            />
-          </div>
+          <SvgCollage
+            x={"25vw"}
+            y={"40vh"}
+            count={10}
+            size={128}
+            className="w-full h-full"
+            svgs={[
+              <Cpu size={128} key="cpu" />,
+              <Binary size={128} key="binary" />,
+              <Laptop size={128} key="laptop" />,
+              <SquareTerminal size={128} key="squareterminal" />,
+            ]}
+          />
           <div className="absolute inset-0 -z-20 bg-texture-dots" />
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
@@ -110,21 +110,21 @@ export default function Home() {
           <ScrollButton />
         </div>
         <div className="relative">
-          <div className="absolute inset-0 -z-20 -translate-x-[40vw] translate-y-[5vh] transition-opacity duration-300 opacity-0 lg:opacity-10 ">
-            <SvgCollage
-              count={15}
-              size={128}
-              className="w-full h-full"
-              svgs={[
-                <Cog size={128} key="cog" />,
-                <Wrench size={128} key="wrench" />,
-                <Laptop size={128} key="laptop" />,
-                <SquareTerminal size={128} key="squareterminal" />,
-                <Bug size={128} key="bug" />,
-                <Database size={128} key="database" />,
-              ]}
-            />
-          </div>
+          <SvgCollage
+            x={"-40vw"}
+            y={"5vh"}
+            count={15}
+            size={128}
+            className="w-full h-full"
+            svgs={[
+              <Cog size={128} key="cog" />,
+              <Wrench size={128} key="wrench" />,
+              <Laptop size={128} key="laptop" />,
+              <SquareTerminal size={128} key="squareterminal" />,
+              <Bug size={128} key="bug" />,
+              <Database size={128} key="database" />,
+            ]}
+          />
           <div className="px-4 md:mx-auto max-w-2xl">
             <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">
               Work
