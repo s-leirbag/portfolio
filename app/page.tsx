@@ -25,12 +25,7 @@ export default function Home() {
             y={"40vh"}
             count={10}
             size={128}
-            svgs={[
-              <Cpu size={128} key="cpu" />,
-              <Binary size={128} key="binary" />,
-              <Laptop size={128} key="laptop" />,
-              <SquareTerminal size={128} key="squareterminal" />,
-            ]}
+            svgs={[Cpu, Binary, Laptop, SquareTerminal]}
           />
           <div className="absolute inset-0 -z-20 bg-texture-dots" />
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
@@ -114,14 +109,7 @@ export default function Home() {
             y={"5vh"}
             count={15}
             size={128}
-            svgs={[
-              <Cog size={128} key="cog" />,
-              <Wrench size={128} key="wrench" />,
-              <Laptop size={128} key="laptop" />,
-              <SquareTerminal size={128} key="squareterminal" />,
-              <Bug size={128} key="bug" />,
-              <Database size={128} key="database" />,
-            ]}
+            svgs={[Cog, Wrench, Laptop, SquareTerminal, Bug, Database]}
           />
           <div className="px-4 md:mx-auto max-w-2xl">
             <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">

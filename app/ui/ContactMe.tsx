@@ -10,12 +10,7 @@ export default function ContactMe() {
         y={"-10vh"}
         count={10}
         size={128}
-        svgs={[
-          <User size={128} key="user" />,
-          <AtSign size={128} key="atsign" />,
-          <Mail size={128} key="mail" />,
-          <MessageCircleHeart size={128} key="messagecircleheart" />,
-        ]}
+        svgs={[User, AtSign, Mail, MessageCircleHeart]}
       />
       <h2 className="text-5xl lg:text-6xl py-0.5 font-semibold">Contact Me</h2>
       <p className="text-neutral-600 dark:text-neutral-300">

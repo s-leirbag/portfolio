@@ -1,15 +1,19 @@
+import { useMemo } from "react";
+
 type Props = {
   x: string;
   y: string;
   count: number;
   size: number;
-  svgs: React.ReactNode[];
+  svgs: React.ComponentType<{ size?: number }>[];
 };
 
 const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
   type Icon = {
     x: number;
     y: number;
+    angle: number;
+    Icon: React.ComponentType<{ size?: number }>;
   };
 
   function generateClusteredIcons(N: number, radius: number): Icon[] {
@@ -38,7 +42,12 @@ const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
       return value < 1;
     }
 
-    icons.push({ x: 0, y: 0 });
+    icons.push({
+      x: 0,
+      y: 0,
+      angle: Math.random() * 360,
+      Icon: svgs[Math.floor(Math.random() * svgs.length)],
+    });
 
     while (icons.length < N) {
       let attempts = 0;
@@ -60,7 +69,12 @@ const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
             radius * Math.sqrt(count) * 0.9
           )
         ) {
-          icons.push({ x, y });
+          icons.push({
+            x,
+            y,
+            angle: Math.random() * 360,
+            Icon: svgs[Math.floor(Math.random() * svgs.length)],
+          });
           placed = true;
         }
 
@@ -78,16 +92,16 @@ const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
     return icons;
   }
 
-  const positions = generateClusteredIcons(count, (size / 2) * 1.1);
+  const icons = useMemo(() => {
+    return generateClusteredIcons(count, (size / 2) * 1.1);
+  }, [count, size]);
 
   return (
     <div
       className={`absolute inset-0 -z-20 translate-x-[${x}] translate-y-[${y}] opacity-10`}
       aria-hidden="true"
     >
-      {positions.map(({ x, y }, i) => {
-        const angle = Math.random() * 360;
-
+      {icons.map(({ x, y, angle, Icon }, i) => {
         return (
           <div
             key={i}
@@ -101,7 +115,7 @@ const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
               opacity: 0.6,
             }}
           >
-            {svgs[Math.floor(Math.random() * svgs.length)]}
+            <Icon size={size} />
           </div>
         );
       })}
