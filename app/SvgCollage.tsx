@@ -102,8 +102,11 @@ const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
 
   return (
     <div
-      className={`absolute inset-0 -z-20 translate-x-[${x}] translate-y-[${y}] opacity-10`}
+      className={`absolute inset-0 -z-20 opacity-10`}
       aria-hidden="true"
+      style={{
+        transform: `translate(${x}, ${y})`,
+      }}
     >
       {icons.map(({ x, y, angle, Icon }, i) => {
         return (
