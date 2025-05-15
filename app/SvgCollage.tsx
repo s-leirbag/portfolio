@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { cn } from "./lib/utils";
 
 type Icon = {
   x: number;
@@ -93,16 +94,17 @@ type Props = {
   count: number;
   size: number;
   svgs: React.ComponentType<{ size?: number }>[];
+  className?: string;
 };
 
-const SvgCollage = ({ x, y, count, size, svgs }: Props) => {
+const SvgCollage = ({ x, y, count, size, svgs, className = "" }: Props) => {
   const icons = useMemo(() => {
     return generateClusteredIcons(count, (size / 2) * 1.1, svgs);
   }, [count, size, svgs]);
 
   return (
     <div
-      className={`absolute inset-0 -z-20 opacity-10`}
+      className={cn("absolute inset-0 -z-20 opacity-10", className)}
       aria-hidden="true"
       style={{
         transform: `translate(${x}, ${y})`,

@@ -110,6 +110,7 @@ export default function Home() {
             count={15}
             size={128}
             svgs={[Cog, Wrench, Laptop, SquareTerminal, Bug, Database]}
+            className="transition-opacity duration-300 opacity-0 lg:opacity-10"
           />
           <div className="px-4 md:mx-auto max-w-2xl">
             <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">
