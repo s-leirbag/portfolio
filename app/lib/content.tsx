@@ -293,6 +293,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
             count={12}
             size={128}
             svgs={project.svgs}
+            className="transition-opacity duration-300 opacity-0 sm:opacity-10"
           />
           <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
             <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
