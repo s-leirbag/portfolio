@@ -1,3 +1,4 @@
+import { BadgeCent, DollarSign, Landmark, PiggyBank } from "lucide-react";
 import { ProjectContent } from "../lib/content";
 
 const citizens: ProjectContent = {
@@ -82,6 +83,7 @@ const citizens: ProjectContent = {
     "Datadog",
   ],
   year: 2024,
+  svgs: [BadgeCent, Landmark, DollarSign, PiggyBank],
   content: [
     {
       type: "image",
@@ -222,7 +224,7 @@ const citizens: ProjectContent = {
         alt: "architecture",
         width: 800,
         height: 450,
-      },  
+      },
       heading: "Architecture",
       content: [
         {

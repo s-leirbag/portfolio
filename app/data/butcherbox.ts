@@ -1,3 +1,4 @@
+import { Beef, ChefHat, Drumstick, Fish, Ham, Utensils } from "lucide-react";
 import { ProjectContent } from "../lib/content";
 
 const butcherbox: ProjectContent = {
@@ -74,6 +75,7 @@ const butcherbox: ProjectContent = {
   ],
   stack: ["React", "Contentful", "Datadog"],
   year: 2024,
+  svgs: [Beef, ChefHat, Fish, Drumstick, Ham, Utensils],
   content: [
     {
       type: "image",

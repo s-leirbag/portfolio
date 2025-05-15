@@ -1,3 +1,4 @@
+import { Box, Hourglass, Timer } from "lucide-react";
 import { ProjectContent } from "../lib/content";
 
 const rubiks: ProjectContent = {
@@ -47,6 +48,7 @@ const rubiks: ProjectContent = {
   year: 2022,
   link: "https://oll-trainer-s-leirbag.vercel.app/",
   linkCTA: "view site",
+  svgs: [Hourglass, Timer, Box, Box, Box],
   content: [
     {
       type: "image",

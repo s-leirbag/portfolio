@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { projects } from "../data/projects";
+import SvgCollage from "../SvgCollage";
 import ContactMe from "../ui/ContactMe";
 import ProjectCard from "../ui/ProjectCard";
 import { sampleN } from "./utils";
@@ -64,6 +65,7 @@ export type ProjectContent = {
   year: number;
   link?: string;
   linkCTA?: string;
+  svgs: React.ComponentType<{ size?: number }>[];
   content: Block[];
 };
 
@@ -285,6 +287,13 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
       <div className="w-full lg:max-w-[1280px] m-auto">
         {/* Hero Section */}
         <div className="relative">
+          <SvgCollage
+            x={"25vw"}
+            y={"40vh"}
+            count={12}
+            size={128}
+            svgs={project.svgs}
+          />
           <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
             <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
               {project.title}

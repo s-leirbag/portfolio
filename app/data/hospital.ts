@@ -1,3 +1,13 @@
+import {
+  Activity,
+  Ambulance,
+  BriefcaseMedical,
+  Cross,
+  Heart,
+  Hospital,
+  Pill,
+  Syringe,
+} from "lucide-react";
 import { ProjectContent } from "../lib/content";
 
 const hospital: ProjectContent = {
@@ -89,6 +99,16 @@ const hospital: ProjectContent = {
     "AWS",
   ],
   year: 2024,
+  svgs: [
+    Hospital,
+    Activity,
+    BriefcaseMedical,
+    Syringe,
+    Pill,
+    Cross,
+    Ambulance,
+    Heart,
+  ],
   content: [
     {
       type: "image",
@@ -396,7 +416,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "This was my first time working with a sizable team on a big project! I loved collaborating and mentoring. I learned that it's hard but important to coordinate across different developers.",
+              value:
+                "This was my first time working with a sizable team on a big project! I loved collaborating and mentoring. I learned that it's hard but important to coordinate across different developers.",
             },
           ],
         },
@@ -405,7 +426,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "I learned that conflict resolution is really hard. I had some disagreements and misunderstandings with teammates that I didn't initially know how to navigate. Our lead developer walked through conflicts with lots of grace and understanding, and I learned a lot from him.",
+              value:
+                "I learned that conflict resolution is really hard. I had some disagreements and misunderstandings with teammates that I didn't initially know how to navigate. Our lead developer walked through conflicts with lots of grace and understanding, and I learned a lot from him.",
             },
           ],
         },
@@ -414,7 +436,8 @@ const hospital: ProjectContent = {
           children: [
             {
               type: "text",
-              value: "This project was super fun and helped prepare me for future professional work!",
+              value:
+                "This project was super fun and helped prepare me for future professional work!",
             },
           ],
         },
