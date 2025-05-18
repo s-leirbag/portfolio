@@ -2,9 +2,41 @@ import { AtSign, Mail, MessageCircleHeart, User } from "lucide-react";
 import Link from "next/link";
 import SvgCollage from "../SvgCollage";
 
+type InputProps = {
+  name: string;
+  label: string;
+  type: string;
+  required: boolean;
+  placeholder: string;
+};
+
+const Input = ({
+  name,
+  label,
+  type,
+  required = false,
+  placeholder = "",
+}: InputProps) => {
+  return (
+    <div>
+      <label htmlFor={name} className="block mb-2">
+        {label} {required && <span className="text-red-500">*</span>}
+      </label>
+      <input
+        id={name}
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        required
+        className="w-full bg-neutral-800 p-4 rounded-lg"
+      />
+    </div>
+  );
+};
+
 export default function ContactMe() {
   return (
-    <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
+    <div className="relative py-16 px-4 md:p-16 md:pr-32 lg:pr-64 flex flex-col justify-center min-h-screen gap-2">
       <SvgCollage
         x={"30vw"}
         y={"-10vh"}
@@ -13,9 +45,40 @@ export default function ContactMe() {
         svgs={[User, AtSign, Mail, MessageCircleHeart]}
       />
       <h2 className="text-5xl lg:text-6xl py-0.5 font-semibold">Contact Me</h2>
-      <p className="text-neutral-600 dark:text-neutral-300">
-        You can find me on social media! Email form coming soon...
+      <p className="text-neutral-600 dark:text-neutral-300 mb-8">
+        Reach me here!
       </p>
+      <form className="space-y-4 text-neutral-600 dark:text-neutral-300">
+        <div className="grid gap-4 sm:grid-cols-2" style={{}}>
+          <Input
+            name="name"
+            label="Name"
+            type="text"
+            required
+            placeholder="Name"
+          />
+          <Input
+            name="email"
+            label="Email"
+            type="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+        <Input
+          name="subject"
+          label="Subject"
+          type="text"
+          required
+          placeholder="Subject"
+        />
+        <button
+          type="submit"
+          className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4"
+        >
+          Submit {"->"}
+        </button>
+      </form>
       <div className="flex flex-row">
         <a
           href="https://www.linkedin.com/in/gabriel-d-shiu/"
