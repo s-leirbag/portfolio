@@ -184,7 +184,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           <div>
-            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
+            <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -200,7 +200,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           <div className="text-center md:px-16 lg:px-32">
-            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
+            <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -216,7 +216,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
       return (
         <div key={index} className="relative py-32">
           <div className="md:pr-32 lg:pr-64">
-            <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
+            <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
             </h3>
             <div className="space-y-8">
@@ -241,7 +241,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               {renderImageSet(block.imageSet)}
             </div>
             {block.heading && (
-              <h3 className="text-4xl lg:text-5xl mt-8 mb-2 rounded font-semibold">
+              <h3 className="text-4xl lg:text-5xl mt-8 mb-2 font-semibold">
                 {block.heading}
               </h3>
             )}
@@ -262,7 +262,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
           <div className="md:grid md:grid-cols-2 gap-8 space-y-8 md:space-y-0">
             <div className="m-auto">{renderImageSet(block.imageSet)}</div>
             <div className={block.imageRight ? "col-start-1 row-start-1" : ""}>
-              <h3 className="text-4xl lg:text-5xl mb-2 rounded font-semibold">
+              <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
                 {block.heading}
               </h3>
               <div className="space-y-8">
@@ -296,7 +296,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
             className="transition-opacity duration-300 opacity-0 sm:opacity-10"
           />
           <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 rounded font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
               {project.title}
             </h1>
             <div className="space-y-8">
@@ -347,7 +347,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
 
         <div className="relative">
           <div className="px-4 md:mx-auto max-w-2xl">
-            <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 rounded font-semibold">
+            <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">
               Other Work
             </h2>
             <p className="leading-loose text-neutral-600 dark:text-neutral-300">
