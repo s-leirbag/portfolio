@@ -305,7 +305,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
               )}
             </div>
 
-            <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] gap-2 gap-y-8 max-w-lg">
+            <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(8.75rem,1fr))] gap-2 gap-y-8 max-w-lg">
               <div className="space-y-2">
                 <strong>Stack</strong>
                 {project.stack.map((item, index) => (
@@ -355,7 +355,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
               projects.
             </p>
           </div>
-          <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
+          <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(18.75rem,100%),1fr))] gap-4 md:gap-8">
             {sampleN(
               projects.filter(
                 (projectContent) => projectContent.title !== project.title

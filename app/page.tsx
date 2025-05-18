@@ -121,7 +121,7 @@ export default function Home() {
               projects.
             </p>
           </div>
-          <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-4 md:gap-8">
+          <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(18.75rem,100%),1fr))] gap-4 md:gap-8">
             {projects.map((p, i) => (
               <ProjectCard
                 key={i}
