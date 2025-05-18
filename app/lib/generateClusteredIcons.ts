@@ -12,27 +12,19 @@ export function generateClusteredIcons(
 ): Icon[] {
   const icons: Icon[] = [];
   const maxAttempts = 100;
+  const ellipseA = radius * Math.sqrt(N) * 1.4;
+  const ellipseB = radius * Math.sqrt(N) * 0.9;
 
   const isOverlapping = (x: number, y: number): boolean => {
-    for (const icon of icons) {
-      const dx = icon.x - x;
-      const dy = icon.y - y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 2 * radius) {
-        return true;
-      }
-    }
-    return false;
+    return icons.some(
+      (icon) => Math.hypot(icon.x - x, icon.y - y) < 2 * radius
+    );
   };
 
-  function isPointInsideEllipse(
-    x: number,
-    y: number,
-    a: number,
-    b: number
-  ): boolean {
-    const value = (x * x) / (a * a) + (y * y) / (b * b);
-    return value < 1;
+  function isPointInsideEllipse(x: number, y: number): boolean {
+    return (
+      (x * x) / (ellipseA * ellipseA) + (y * y) / (ellipseB * ellipseB) < 1
+    );
   }
 
   icons.push({
@@ -53,15 +45,7 @@ export function generateClusteredIcons(
       const x = base.x + Math.cos(angle) * distance;
       const y = base.y + Math.sin(angle) * distance;
 
-      if (
-        !isOverlapping(x, y) &&
-        isPointInsideEllipse(
-          x,
-          y,
-          radius * Math.sqrt(N) * 1.4,
-          radius * Math.sqrt(N) * 0.9
-        )
-      ) {
+      if (!isOverlapping(x, y) && isPointInsideEllipse(x, y)) {
         icons.push({
           x,
           y,
