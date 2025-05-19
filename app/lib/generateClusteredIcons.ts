@@ -13,8 +13,7 @@ export function generateClusteredIcons(
   iconComponents: React.ComponentType<{ size?: number }>[]
 ): PlacedIcon[] {
   const placedIcons: PlacedIcon[] = [];
-  const maxAttempts = 100;
-  const maxBatchesBeforeExpand = 3;
+  const maxAttempts = 300;
   let ellipseA = radius * Math.sqrt(N) * 1.4;
   let ellipseB = radius * Math.sqrt(N) * 0.9;
 
@@ -31,6 +30,25 @@ export function generateClusteredIcons(
     );
   }
 
+  function tryPlaceNearExisting(): PlacedIcon | null {
+    const base = randomElement(placedIcons);
+    const angle = Math.random() * 2 * Math.PI;
+    const distance = 2 * radius;
+    const x = base.x + Math.cos(angle) * distance;
+    const y = base.y + Math.sin(angle) * distance;
+
+    if (!overlapsExistingIcon(x, y) && isPointInsideEllipse(x, y)) {
+      return {
+        x,
+        y,
+        angle: Math.random() * 360,
+        IconComponent: randomElement(iconComponents),
+      };
+    }
+
+    return null;
+  }
+
   placedIcons.push({
     x: 0,
     y: 0,
@@ -41,29 +59,18 @@ export function generateClusteredIcons(
   while (placedIcons.length < N) {
     let placed = false;
 
-    for (let batch = 0; batch < maxBatchesBeforeExpand && !placed; batch++) {
-      for (let attempt = 0; attempt < maxAttempts && !placed; attempt++) {
-        const base = randomElement(placedIcons);
-        const angle = Math.random() * 2 * Math.PI;
-        const distance = 2 * radius;
-        const x = base.x + Math.cos(angle) * distance;
-        const y = base.y + Math.sin(angle) * distance;
-
-        if (!overlapsExistingIcon(x, y) && isPointInsideEllipse(x, y)) {
-          placedIcons.push({
-            x,
-            y,
-            angle: Math.random() * 360,
-            IconComponent: randomElement(iconComponents),
-          });
-          placed = true;
-        }
+    for (let attempt = 0; attempt < maxAttempts && !placed; attempt++) {
+      const placedIcon = tryPlaceNearExisting();
+      if (placedIcon) {
+        placedIcons.push(placedIcon);
+        placed = true;
       }
     }
 
     if (!placed) {
       ellipseA *= 1.05;
       ellipseB *= 1.05;
+
       if (ellipseA > 1.5 * radius * Math.sqrt(N) * 1.4) {
         console.warn(
           `Could not place all icons. Only placed ${placedIcons.length} of ${N}.`
