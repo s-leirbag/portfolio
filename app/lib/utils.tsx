@@ -23,3 +23,7 @@ export function sampleN<T>(array: T[], n: number): T[] {
 
   return result;
 }
+
+export function randomElement<T>(arr: T[]): T {
+  return arr[Math.floor(Math.random() * arr.length)];
+}

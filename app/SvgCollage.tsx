@@ -24,7 +24,7 @@ const SvgCollage = ({ x, y, count, size, svgs, className = "" }: Props) => {
         transform: `translate(${x}, ${y})`,
       }}
     >
-      {icons.map(({ x, y, angle, Icon }, i) => {
+      {icons.map(({ x, y, angle, IconComponent }, i) => {
         return (
           <div
             key={i}
@@ -38,7 +38,7 @@ const SvgCollage = ({ x, y, count, size, svgs, className = "" }: Props) => {
               opacity: 0.6,
             }}
           >
-            <Icon size={size} />
+            <IconComponent size={size} />
           </div>
         );
       })}
