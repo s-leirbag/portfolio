@@ -328,7 +328,7 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
                   <strong>Link</strong>
                   <Link
                     href={project.link}
-                    className="block w-fit rounded-lg bg-sky-500 hover:bg-[#0ea5e9e6] text-neutral-50 py-4 px-4"
+                    className="block w-fit rounded-lg bg-sky-800 hover:bg-sky-700 text-neutral-50 py-4 px-4 hover:ring-1 hover:ring-sky-300"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
