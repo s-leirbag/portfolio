@@ -58,14 +58,14 @@ export default function RootLayout({
           <Link href={"/"} className="relative">
             <Image
               src="/logo-1-dot-fat-dark.png"
-              alt="logo"
+              alt="Home"
               width={512}
               height={512}
               className="hidden dark:inline-block"
             />
             <Image
               src="/logo-1-dot-fat-light.png"
-              alt="logo"
+              alt="Home"
               width={512}
               height={512}
               className="dark:hidden"

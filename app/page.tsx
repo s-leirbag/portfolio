@@ -33,7 +33,7 @@ export default function Home() {
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
               src="/professional_photo.jpeg"
-              alt="portrait photo"
+              alt="A smiling developer...before he returns to debugging"
               width={2344}
               height={2344}
               priority

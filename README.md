@@ -41,7 +41,6 @@
 ## Todo
 
 - Add other projects
-- Add textures to project pages
 - Add animations
 - Email form
-- Remove redundant CSS
+- Redo alt text on project pages
