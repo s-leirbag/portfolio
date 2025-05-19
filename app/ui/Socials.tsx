@@ -42,7 +42,7 @@ export default function Socials() {
         href="https://www.linkedin.com/in/gabriel-d-shiu/"
         target="_blank"
         rel="noopener noreferrer"
-        className="py-2 pr-2"
+        className="p-2 -ml-2"
       >
         <LinkedInSvg />
       </a>
