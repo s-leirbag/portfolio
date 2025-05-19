@@ -43,17 +43,24 @@ export default function ScrollButton() {
       className={cn(
         "absolute hidden sm:block sm:bottom-16",
         "self-center",
-        "bg-sky-500 text-primary-foreground rounded-full p-3",
+        "bg-sky-500 rounded-full p-3",
         "shadow-lg transition-all duration-300",
         "hover:bg-sky-500/90 hover:shadow-xl hover:-translate-y-1",
-        "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+        "focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2",
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-10 pointer-events-none"
       )}
       aria-label="Scroll to next section"
+      aria-hidden={!isVisible}
+      tabIndex={isVisible ? 0 : -1}
+      type="button"
     >
-      <ChevronDown className="h-6 w-6 text-neutral-50" />
+      <ChevronDown
+        className="h-6 w-6 text-neutral-50"
+        aria-hidden="true"
+        focusable="false"
+      />
     </button>
   );
 }
