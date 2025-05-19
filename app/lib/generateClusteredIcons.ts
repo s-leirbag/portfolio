@@ -62,6 +62,12 @@ export function generateClusteredIcons(
     if (!placed) {
       ellipseA *= 1.05;
       ellipseB *= 1.05;
+      if (ellipseA > 1.5 * radius * Math.sqrt(N) * 1.4) {
+        console.warn(
+          `Could not place all icons. Only placed ${icons.length} of ${N}.`
+        );
+        break;
+      }
     }
   }
 
