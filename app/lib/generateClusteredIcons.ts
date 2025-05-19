@@ -9,18 +9,19 @@ type PlacedIcon = {
 
 export function generateClusteredIcons(
   N: number,
-  radius: number,
+  size: number,
   iconComponents: React.ComponentType<{ size?: number }>[]
 ): PlacedIcon[] {
   const placedIcons: PlacedIcon[] = [];
   const maxAttempts = 300;
+  const radius = size / 2
   let ellipseA = radius * Math.sqrt(N) * 1.4;
   let ellipseB = radius * Math.sqrt(N) * 0.9;
 
   const overlapsExistingIcon = (x: number, y: number): boolean => {
     const buffer = 0.95;
     return placedIcons.some(
-      (icon) => Math.hypot(icon.x - x, icon.y - y) < 2 * radius * buffer
+      (icon) => Math.hypot(icon.x - x, icon.y - y) < size * buffer
     );
   };
 
@@ -33,9 +34,8 @@ export function generateClusteredIcons(
   function tryPlaceNearExisting(): PlacedIcon | null {
     const base = randomElement(placedIcons);
     const angle = Math.random() * 2 * Math.PI;
-    const distance = 2 * radius;
-    const x = base.x + Math.cos(angle) * distance;
-    const y = base.y + Math.sin(angle) * distance;
+    const x = base.x + Math.cos(angle) * size;
+    const y = base.y + Math.sin(angle) * size;
 
     if (!overlapsExistingIcon(x, y) && isPointInsideEllipse(x, y)) {
       return {

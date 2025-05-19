@@ -12,8 +12,8 @@ type Props = {
 };
 
 const SvgCollage = ({ x, y, count, size, svgs, className = "" }: Props) => {
-  const icons = useMemo(() => {
-    return generateClusteredIcons(count, (size / 2) * 1.1, svgs);
+  const placedIcons = useMemo(() => {
+    return generateClusteredIcons(count, size * 1.1, svgs);
   }, [count, size, svgs]);
 
   return (
@@ -24,7 +24,7 @@ const SvgCollage = ({ x, y, count, size, svgs, className = "" }: Props) => {
         transform: `translate(${x}, ${y})`,
       }}
     >
-      {icons.map(({ x, y, angle, IconComponent }, i) => {
+      {placedIcons.map(({ x, y, angle, IconComponent }, i) => {
         return (
           <div
             key={i}
