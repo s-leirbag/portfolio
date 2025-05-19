@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -9,7 +9,6 @@ export default function ScrollButton() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Get the height of the viewport
       const viewportHeight = window.innerHeight;
 
       // If we've scrolled more than % of the viewport height, hide the button
@@ -20,37 +19,36 @@ export default function ScrollButton() {
       }
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToNextSection = () => {
-    // Scroll to the next viewport height
+  const scrollToNextSection = useCallback(() => {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+
     window.scrollTo({
       top: window.innerHeight,
-      behavior: "smooth",
+      behavior: prefersReducedMotion ? "auto" : "smooth",
     });
-  };
+  }, []);
+
+  const buttonClasses = cn(
+    "absolute hidden sm:block sm:bottom-16 self-center",
+    "bg-sky-500 rounded-full p-3",
+    "shadow-lg transition-all duration-300",
+    "hover:bg-sky-500/90 hover:shadow-xl hover:-translate-y-1",
+    "focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2",
+    isVisible
+      ? "opacity-100 translate-y-0"
+      : "opacity-0 translate-y-10 pointer-events-none"
+  );
 
   return (
     <button
       onClick={scrollToNextSection}
-      className={cn(
-        "absolute hidden sm:block sm:bottom-16",
-        "self-center",
-        "bg-sky-500 rounded-full p-3",
-        "shadow-lg transition-all duration-300",
-        "hover:bg-sky-500/90 hover:shadow-xl hover:-translate-y-1",
-        "focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2",
-        isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-10 pointer-events-none"
-      )}
+      className={buttonClasses}
       aria-label="Scroll to next section"
       aria-hidden={!isVisible}
       tabIndex={isVisible ? 0 : -1}
