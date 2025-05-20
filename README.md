@@ -40,7 +40,6 @@
 
 ## Todo
 
-- Remove "/" in project href's, refactor
 - Add other projects
 - Add animations
 - Email form

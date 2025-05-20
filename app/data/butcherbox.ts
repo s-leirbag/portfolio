@@ -4,7 +4,7 @@ import { ProjectContent } from "../lib/content";
 const butcherbox: ProjectContent = {
   title: "ButcherBox Internship",
   blurb: "My summer e-commerce internship.",
-  href: "/butcherbox",
+  href: "butcherbox",
   cta: "read story",
   image: {
     src: "/butcherbox/butcherbox-ss.png",

@@ -10,7 +10,7 @@ import { ProjectContent } from "../lib/content";
 const gifCreator: ProjectContent = {
   title: "GIF Creator",
   blurb: "Building a funny GIF maker for my friend.",
-  href: "/gif-creator",
+  href: "gif-creator",
   cta: "view project",
   image: {
     src: "/gif-creator/gif-creator-ss.png",

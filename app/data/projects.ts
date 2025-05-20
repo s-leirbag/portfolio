@@ -14,11 +14,11 @@ export const projects = [
   mentalHealth,
   rubiks,
 ];
-export const projectsMap: Record<string, ProjectContent> = {
-  butcherbox,
-  citizens,
-  hospital,
-  "gif-creator": gifCreator,
-  "mental-health": mentalHealth,
-  rubiks,
-};
+
+export const projectsMap: Record<string, ProjectContent> = projects.reduce(
+  (acc, project) => {
+    acc[project.href] = project;
+    return acc;
+  },
+  {} as Record<string, ProjectContent>
+);

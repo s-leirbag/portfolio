@@ -4,7 +4,7 @@ import { ProjectContent } from "../lib/content";
 const mentalHealth: ProjectContent = {
   title: "Mental Health Mentor Matcher",
   blurb: "Using LLMs and leading my hackathon team.",
-  href: "/mental-health",
+  href: "mental-health",
   cta: "view project",
   image: {
     src: "/mental-health/mental-health-ss.png",

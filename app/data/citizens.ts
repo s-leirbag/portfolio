@@ -4,7 +4,7 @@ import { ProjectContent } from "../lib/content";
 const citizens: ProjectContent = {
   title: "Citizens Bank Internship",
   blurb: "My time as an intern at Citizens Bank.",
-  href: "/citizens",
+  href: "citizens",
   cta: "read story",
   image: {
     src: "/citizens/citizens-ss.jpeg",

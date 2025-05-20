@@ -13,7 +13,7 @@ import { ProjectContent } from "../lib/content";
 const hospital: ProjectContent = {
   title: "Brigham & Women's Hospital Application",
   blurb: "Leading an 11-person agile project.",
-  href: "/hospital",
+  href: "hospital",
   cta: "view project",
   image: {
     src: "/hospital/path.png",

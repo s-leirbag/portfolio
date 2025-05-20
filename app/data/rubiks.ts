@@ -4,7 +4,7 @@ import { ProjectContent } from "../lib/content";
 const rubiks: ProjectContent = {
   title: "Rubik's Cube Trainer",
   blurb: "My first web project!",
-  href: "/rubiks",
+  href: "rubiks",
   cta: "view project",
   image: {
     src: "/rubiks/oll-trainer-ss.png",
