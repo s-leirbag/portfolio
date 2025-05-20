@@ -41,6 +41,40 @@ export const metadata: Metadata = {
   },
 };
 
+const Header = () => (
+  <header>
+    <nav className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8">
+      <Link href={"/"} className="relative">
+        <Image
+          src="/logo-1-dot-fat-dark.png"
+          alt="Home"
+          width={512}
+          height={512}
+          className="hidden dark:inline-block"
+        />
+        <Image
+          src="/logo-1-dot-fat-light.png"
+          alt="Home"
+          width={512}
+          height={512}
+          className="dark:hidden"
+        />
+      </Link>
+    </nav>
+  </header>
+);
+
+const Footer = () => (
+  <footer className="absolute bottom-0 w-full mb-8 px-4">
+    <Link
+      href={"https://github.com/s-leirbag/portfolio"}
+      className="block w-fit mx-auto text-center hover:underline text-sky-500"
+    >
+      github repo {'->'}
+    </Link>
+  </footer>
+);
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,27 +83,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-lg lg:text-xl font-[family-name:var(--font-geist-sans)] transition-all duration-200`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-lg lg:text-xl font-[family-name:var(--font-geist-sans)] transition-all duration-200 relative`}
       >
-        <div className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8">
-          <Link href={"/"} className="relative">
-            <Image
-              src="/logo-1-dot-fat-dark.png"
-              alt="Home"
-              width={512}
-              height={512}
-              className="hidden dark:inline-block"
-            />
-            <Image
-              src="/logo-1-dot-fat-light.png"
-              alt="Home"
-              width={512}
-              height={512}
-              className="dark:hidden"
-            />
-          </Link>
-        </div>
+        <Header />
         {children}
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>

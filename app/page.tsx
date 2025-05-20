@@ -18,9 +18,9 @@ import Socials from "./ui/Socials";
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden">
+    <main className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
-        <div className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
+        <section className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
           <SvgCollage
             x={"25vw"}
             y={"40vh"}
@@ -57,8 +57,8 @@ export default function Home() {
             </div>
           </div>
           <ScrollButton />
-        </div>
-        <div className="relative">
+        </section>
+        <section className="relative">
           <SvgCollage
             x={"-40vw"}
             y={"5vh"}
@@ -88,9 +88,9 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </section>
         <ContactMe />
       </div>
-    </div>
+    </main>
   );
 }

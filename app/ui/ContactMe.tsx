@@ -1,11 +1,10 @@
 import { AtSign, Mail, MessageCircleHeart, User } from "lucide-react";
-import Link from "next/link";
 import SvgCollage from "../SvgCollage";
 import Socials from "./Socials";
 
 export default function ContactMe() {
   return (
-    <div className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
+    <section className="relative py-16 px-4 md:p-16 flex flex-col justify-center min-h-screen gap-2">
       <SvgCollage
         x={"30vw"}
         y={"-10vh"}
@@ -18,12 +17,6 @@ export default function ContactMe() {
         You can find me on social media! Email form coming soon...
       </p>
       <Socials />
-      <Link
-        href={"https://github.com/s-leirbag/portfolio"}
-        className="w-full absolute left-0 bottom-0 block p-8 text-center hover:underline text-sky-500"
-      >
-        https://github.com/s-leirbag/portfolio
-      </Link>
-    </div>
+    </section>
   );
 }
