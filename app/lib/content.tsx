@@ -175,14 +175,14 @@ function renderBlock(block: Block, index: number): React.ReactNode {
   switch (block.type) {
     case "image":
       return (
-        <div key={index} className="relative py-32">
+        <div key={index} className="py-32">
           {renderImageSet(block.imageSet)}
         </div>
       );
 
     case "textLeft":
       return (
-        <div key={index} className="relative py-32">
+        <section key={index} className="py-32">
           <div>
             <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
@@ -193,12 +193,12 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               )}
             </div>
           </div>
-        </div>
+        </section>
       );
 
     case "textCenter":
       return (
-        <div key={index} className="relative py-32">
+        <section key={index} className="py-32">
           <div className="text-center md:px-16 lg:px-32">
             <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
@@ -209,12 +209,12 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               )}
             </div>
           </div>
-        </div>
+        </section>
       );
 
     case "textRightPadding":
       return (
-        <div key={index} className="relative py-32">
+        <section key={index} className="py-32">
           <div className="md:pr-32 lg:pr-64">
             <h3 className="text-4xl lg:text-5xl mb-2 font-semibold">
               {block.heading}
@@ -225,13 +225,13 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               )}
             </div>
           </div>
-        </div>
+        </section>
       );
 
     case "imageAboveTextLeft":
     case "imageAboveTextCenter":
       return (
-        <div key={index} className="relative py-32">
+        <section key={index} className="py-32">
           <div
             className={
               block.type === "imageAboveTextCenter" ? "text-center" : ""
@@ -253,12 +253,12 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               </div>
             )}
           </div>
-        </div>
+        </section>
       );
 
     case "split":
       return (
-        <div key={index} className="relative py-32">
+        <section key={index} className="py-32">
           <div className="md:grid md:grid-cols-2 gap-8 space-y-8 md:space-y-0">
             <div className="m-auto">{renderImageSet(block.imageSet)}</div>
             <div className={block.imageRight ? "col-start-1 row-start-1" : ""}>
@@ -272,7 +272,7 @@ function renderBlock(block: Block, index: number): React.ReactNode {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       );
 
     default:
@@ -283,69 +283,71 @@ function renderBlock(block: Block, index: number): React.ReactNode {
 // Main component to render the entire project
 export function ProjectPage({ project }: { project: ProjectContent }) {
   return (
-    <div className="relative overflow-hidden">
+    <main className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
-        {/* Hero Section */}
-        <div className="relative">
-          <SvgCollage
-            x={"25vw"}
-            y={"40vh"}
-            count={12}
-            size={128}
-            svgs={project.svgs}
-            className="transition-opacity duration-300 opacity-0 sm:opacity-10"
-          />
-          <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
-              {project.title}
-            </h1>
-            <div className="space-y-8">
-              {project.description.map((node, index) =>
-                renderRichTextNode(node, index)
-              )}
-            </div>
+        <article>
+          {/* Hero Section */}
+          <header className="relative">
+            <SvgCollage
+              x={"25vw"}
+              y={"40vh"}
+              count={12}
+              size={128}
+              svgs={project.svgs}
+              className="transition-opacity duration-300 opacity-0 sm:opacity-10"
+            />
+            <div className="py-16 px-4 md:px-16 pt-[calc(25vh)] gap-8 flex flex-col">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-500 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+                {project.title}
+              </h1>
+              <div className="space-y-8">
+                {project.description.map((node, index) =>
+                  renderRichTextNode(node, index)
+                )}
+              </div>
 
-            <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(8.75rem,1fr))] gap-2 gap-y-8 max-w-lg">
-              <div className="space-y-2">
-                <strong>Stack</strong>
-                {project.stack.map((item, index) => (
-                  <p
-                    key={index}
-                    className="text-neutral-600 dark:text-neutral-300"
-                  >
-                    {item}
-                  </p>
-                ))}
-              </div>
-              <div className="space-y-2">
-                <strong>Year</strong>
-                <p className="text-neutral-600 dark:text-neutral-300">
-                  {project.year}
-                </p>
-              </div>
-              {project.link && project.linkCTA && (
+              <div className="pt-4 grid grid-cols-[repeat(auto-fit,minmax(8.75rem,1fr))] gap-2 gap-y-8 max-w-lg">
                 <div className="space-y-2">
-                  <strong>Link</strong>
-                  <Link
-                    href={project.link}
-                    className="block w-fit rounded-lg bg-sky-800 hover:bg-sky-700 text-neutral-50 py-4 px-4 hover:ring-1 hover:ring-sky-300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.linkCTA} {"->"}
-                  </Link>
+                  <strong>Stack</strong>
+                  {project.stack.map((item, index) => (
+                    <p
+                      key={index}
+                      className="text-neutral-600 dark:text-neutral-300"
+                    >
+                      {item}
+                    </p>
+                  ))}
                 </div>
-              )}
+                <div className="space-y-2">
+                  <strong>Year</strong>
+                  <p className="text-neutral-600 dark:text-neutral-300">
+                    {project.year}
+                  </p>
+                </div>
+                {project.link && project.linkCTA && (
+                  <div className="space-y-2">
+                    <strong>Link</strong>
+                    <Link
+                      href={project.link}
+                      className="block w-fit rounded-lg bg-sky-800 hover:bg-sky-700 text-neutral-50 py-4 px-4 hover:ring-1 hover:ring-sky-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.linkCTA} {"->"}
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
+          </header>
+
+          {/* Main Content */}
+          <div className="px-4 md:px-16">
+            {project.content.map((block, index) => renderBlock(block, index))}
           </div>
-        </div>
+        </article>
 
-        {/* Main Content */}
-        <div className="px-4 md:px-16 flex flex-col">
-          {project.content.map((block, index) => renderBlock(block, index))}
-        </div>
-
-        <div className="relative">
+        <section className="relative">
           <div className="px-4 md:mx-auto max-w-2xl">
             <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">
               Other Work
@@ -372,9 +374,9 @@ export function ProjectPage({ project }: { project: ProjectContent }) {
               />
             ))}
           </div>
-        </div>
+        </section>
         <ContactMe />
       </div>
-    </div>
+    </main>
   );
 }
