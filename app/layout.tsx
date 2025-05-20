@@ -50,8 +50,11 @@ const Header = () => (
       skip navigation
     </a>
 
-    <nav className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8">
-      <Link href={"/"} className="relative">
+    <nav
+      aria-label="Main navigation"
+      className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8"
+    >
+      <Link href={"/"} className="relative" aria-label="Home">
         <Image
           src="/logo-1-dot-fat-dark.png"
           alt="Home"
@@ -72,13 +75,16 @@ const Header = () => (
 );
 
 const Footer = () => (
-  <footer className="absolute bottom-0 w-full mb-8 px-4">
-    <Link
+  <footer className="absolute bottom-0 w-full mb-8 px-4" role="contentinfo">
+    <a
       href={"https://github.com/s-leirbag/portfolio"}
+      target="_blank"
+      rel="noopener noreferrer"
       className="block w-fit mx-auto text-center hover:underline text-sky-500"
+      aria-label="View project source code on GitHub"
     >
       github repo {"->"}
-    </Link>
+    </a>
   </footer>
 );
 

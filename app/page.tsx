@@ -20,7 +20,10 @@ export default function Home() {
   return (
     <main id="main-content" className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
-        <section className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
+        <section
+          className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen"
+          aria-labelledby="about-heading"
+        >
           <SvgCollage
             x={"25vw"}
             y={"40vh"}
@@ -28,7 +31,10 @@ export default function Home() {
             size={128}
             svgs={[Cpu, Binary, Laptop, SquareTerminal]}
           />
-          <div className="absolute inset-0 -z-20 bg-texture-dots" />
+          <div
+            className="absolute inset-0 -z-20 bg-texture-dots"
+            aria-hidden="true"
+          />
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
@@ -39,7 +45,10 @@ export default function Home() {
               priority
             />
             <div className="flex-1 flex flex-col gap-2">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent">
+              <h1
+                id="about-heading"
+                className="text-5xl md:text-7xl lg:text-8xl py-0.5 font-semibold bg-gradient-to-r from-sky-600 to-sky-300 dark:to-sky-200 bg-clip-text text-transparent"
+              >
                 Gabriel Shiu
               </h1>
               <p className="leading-relaxed text-neutral-600 dark:text-neutral-300">
@@ -56,9 +65,9 @@ export default function Home() {
               <Socials />
             </div>
           </div>
-          <ScrollButton />
+          <ScrollButton aria-label="Scroll to projects section" />
         </section>
-        <section className="relative">
+        <section className="relative" aria-labelledby="work-heading">
           <SvgCollage
             x={"-40vw"}
             y={"5vh"}
@@ -68,7 +77,10 @@ export default function Home() {
             className="transition-opacity duration-300 opacity-0 lg:opacity-10"
           />
           <div className="px-4 md:mx-auto max-w-2xl">
-            <h2 className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold">
+            <h2
+              id="work-heading"
+              className="text-5xl lg:text-6xl py-0.5 pt-16 font-semibold"
+            >
               Work
             </h2>
             <p className="text-neutral-600 dark:text-neutral-300">
@@ -77,9 +89,9 @@ export default function Home() {
             </p>
           </div>
           <div className="pt-8 pb-16 px-4 md:p-16 grid grid-cols-[repeat(auto-fit,minmax(min(18.75rem,100%),1fr))] gap-4 md:gap-8">
-            {projects.map((p, i) => (
+            {projects.map((p) => (
               <ProjectCard
-                key={i}
+                key={p.title}
                 title={p.title}
                 blurb={p.blurb}
                 href={p.href}

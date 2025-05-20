@@ -4,7 +4,9 @@ import { useCallback, useEffect, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export default function ScrollButton() {
+export default function ScrollButton(
+  props: React.ButtonHTMLAttributes<HTMLButtonElement>
+) {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
@@ -49,10 +51,10 @@ export default function ScrollButton() {
     <button
       onClick={scrollToNextSection}
       className={buttonClasses}
-      aria-label="Scroll to next section"
       aria-hidden={!isVisible}
       tabIndex={isVisible ? 0 : -1}
       type="button"
+      {...props}
     >
       <ChevronDown
         className="h-6 w-6 text-neutral-50"
