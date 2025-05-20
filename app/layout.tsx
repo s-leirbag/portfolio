@@ -51,10 +51,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-lg lg:text-xl font-[family-name:var(--font-geist-sans)] transition-all duration-200`}
       >
-        {children}
-        <Analytics />
-        <SpeedInsights />
-        <div className="absolute top-0 left-0 w-24 md:w-32 p-4 md:p-8">
+        <div className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8">
           <Link href={"/"} className="relative">
             <Image
               src="/logo-1-dot-fat-dark.png"
@@ -72,6 +69,9 @@ export default function RootLayout({
             />
           </Link>
         </div>
+        {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
