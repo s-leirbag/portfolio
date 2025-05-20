@@ -43,6 +43,13 @@ export const metadata: Metadata = {
 
 const Header = () => (
   <header>
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:absolute z-50 focus:p-4 bg-sky-700 text-neutral-50 -translate-y-full focus:translate-y-0 transition-all"
+    >
+      skip navigation
+    </a>
+
     <nav className="absolute top-0 left-0 z-20 w-24 md:w-32 p-4 md:p-8">
       <Link href={"/"} className="relative">
         <Image
@@ -70,7 +77,7 @@ const Footer = () => (
       href={"https://github.com/s-leirbag/portfolio"}
       className="block w-fit mx-auto text-center hover:underline text-sky-500"
     >
-      github repo {'->'}
+      github repo {"->"}
     </Link>
   </footer>
 );

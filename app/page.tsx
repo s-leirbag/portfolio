@@ -18,7 +18,7 @@ import Socials from "./ui/Socials";
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
+    <main id="main-content" className="relative overflow-hidden">
       <div className="w-full lg:max-w-[1280px] m-auto">
         <section className="relative py-16 pt-24 px-4 md:px-16 flex flex-col justify-center gap-8 min-h-screen">
           <SvgCollage
