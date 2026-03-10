@@ -52,10 +52,10 @@ export default function Home() {
                 Gabriel Shiu
               </h1>
               <p className="leading-relaxed text-neutral-600 dark:text-neutral-300">
-                I build for the web—React, TypeScript, Remix—with a focus on
-                production reliability. At ButcherBox, I&apos;ve owned features
-                protecting millions in revenue and led compliance work across
-                six systems, all in my first 8 months.
+                I build for the web, with a focus on production reliability. At
+                ButcherBox, I&apos;ve owned features protecting millions in
+                revenue and led compliance work across six systems, all in my
+                first 8 months.
               </p>
               <Socials />
             </div>
