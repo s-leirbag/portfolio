@@ -52,15 +52,10 @@ export default function Home() {
                 Gabriel Shiu
               </h1>
               <p className="leading-relaxed text-neutral-600 dark:text-neutral-300">
-                I&apos;m a lifelong learner and teacher, passionate about
-                growing as a software engineer and helping my peers along the
-                way!
-                <br />
-                <br />
-                Over the past year, I&apos;ve interned at ButcherBox and
-                Citizens Bank, and have continued learning through personal
-                projects. I plan to enter industry in 2025—I am excited to build
-                innovative software and inspire others!
+                I build for the web—React, TypeScript, Remix—with a focus on
+                production reliability. At ButcherBox, I&apos;ve owned features
+                protecting millions in revenue and led compliance work across
+                six systems, all in my first 8 months.
               </p>
               <Socials />
             </div>
