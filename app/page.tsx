@@ -38,7 +38,7 @@ export default function Home() {
           <div className="w-full flex flex-col md:flex-row gap-4 md:gap-12">
             <Image
               className="rounded-2xl lg:w-64 lg:h-64 w-48 h-full md:order-1"
-              src="/professional_photo.jpeg"
+              src="/professional_photo.jpg"
               alt="A smiling developer...before he returns to debugging"
               width={2344}
               height={2344}

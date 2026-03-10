@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+import { AnalyticsWrapper } from "./AnalyticsWrapper";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -101,7 +101,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <Analytics />
+        <AnalyticsWrapper />
         <SpeedInsights />
       </body>
     </html>
