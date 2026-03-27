@@ -4,10 +4,10 @@ import { ProjectContent } from "../lib/content";
 const butcherbox: ProjectContent = {
   title: "ButcherBox Internship",
   blurb: "My summer e-commerce internship.",
-  href: "butcherbox",
+  href: "butcherbox-internship",
   cta: "read story",
   image: {
-    src: "/butcherbox/butcherbox-ss.png",
+    src: "/butcherbox-internship/butcherbox-ss.png",
     alt: "project thumbnail",
     width: 3248,
     height: 2112,
@@ -80,7 +80,7 @@ const butcherbox: ProjectContent = {
     {
       type: "image",
       imageSet: {
-        src: "/butcherbox/butcherbox-ss.png",
+        src: "/butcherbox-internship/butcherbox-ss.png",
         alt: "project thumbnail",
         width: 3248,
         height: 2112,
@@ -106,8 +106,8 @@ const butcherbox: ProjectContent = {
       type: "split",
       imageRight: false,
       imageSet: {
-        src: "/butcherbox/visualize.svg",
-        srcDark: "/butcherbox/visualize-dark.svg",
+        src: "/butcherbox-internship/visualize.svg",
+        srcDark: "/butcherbox-internship/visualize-dark.svg",
         alt: "Visualizing Content Templates",
         width: 1920,
         height: 1080,
@@ -129,7 +129,7 @@ const butcherbox: ProjectContent = {
     {
       type: "image",
       imageSet: {
-        src: "/butcherbox/whats-in-the-box.png",
+        src: "/butcherbox-internship/whats-in-the-box.png",
         alt: "what's in the box",
         width: 3248,
         height: 2112,
@@ -155,8 +155,8 @@ const butcherbox: ProjectContent = {
       type: "split",
       imageRight: false,
       imageSet: {
-        src: "/butcherbox/filter.svg",
-        srcDark: "/butcherbox/filter-dark.svg",
+        src: "/butcherbox-internship/filter.svg",
+        srcDark: "/butcherbox-internship/filter-dark.svg",
         alt: "filtering",
         width: 1920,
         height: 1080,
@@ -178,7 +178,7 @@ const butcherbox: ProjectContent = {
     {
       type: "image",
       imageSet: {
-        src: "/butcherbox/fish-smooch.png",
+        src: "/butcherbox-internship/fish-smooch.png",
         alt: "fish smooch",
         width: 3248,
         height: 2112,

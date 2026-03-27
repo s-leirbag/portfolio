@@ -1,5 +1,5 @@
 import { ProjectContent } from "../lib/content";
-import butcherbox from "./butcherbox";
+import butcherbox from "./butcherbox-internship";
 import citizens from "./citizens";
 import hospital from "./hospital";
 
